@@ -1,0 +1,283 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+
+    /* COLORS */
+    --primary-blue: #0d47a1;
+    --black: #111111;
+    --white: #ffffff;
+    --text-dark: #000000;
+    --text-muted: #555555;
+    --border-light: #e0e0e0;
+
+    /* LAYOUT */
+    --container-padding: 100px;
+    --header-padding: 40px;
+    --navbar-height: 52px;
+    --header-height: 95px;
+
+    /* ICONS */
+    --icon-size: 20px;
+    --icon-gap: 14px;
+
+    /* SEARCH */
+    --search-width: 180px;
+
+    /* CM IMAGE */
+    --cm-height: 140px;
+    --cm-right: 40px;
+    --cm-top: -21px;
+
+    /* FONTS */
+    --font-primary: "Segoe UI", Arial, sans-serif;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    background: var(--white);
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.top-bar {
+    background: var(--primary-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px var(--container-padding);
+    font-size: 14px;
+}
+
+/* LEFT */
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+/* RIGHT */
+.top-right {
+    display: flex;
+    align-items: center;
+    transition: all 0.35s ease;
+}
+
+.top-right a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: var(--icon-gap);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ICONS */
+.top-left img,
+.top-right img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================
+   SEARCH SLIDE
+========================= */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0;
+    transition: width 0.35s ease;
+}
+
+.search-wrapper input {
+    height: 28px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 13px;
+}
+
+.search-wrapper button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+/* ACTIVE SEARCH */
+.top-right.search-open .search-wrapper {
+    width: var(--search-width);
+}
+
+/* =========================
+   HEADER WRAPPER
+========================= */
+.header-wrapper {
+    position: relative;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+.main-header {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px var(--header-padding);
+    height: var(--header-height);
+    border-bottom: 1px solid var(--border-light);
+    padding-right: 220px;
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo-section img {
+    height: 80px;
+    width: 350px;
+    object-fit: contain;
+}
+
+/* =========================
+   PERSON / CM SECTION
+========================= */
+.person-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cm-text {
+    text-align: right;
+    margin-right: 150px;
+}
+
+.cm-text strong {
+    display: block;
+    font-size: 15px;
+    color: var(--text-dark);
+}
+
+.cm-text p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* CM PHOTO */
+.cm-photo {
+    position: absolute;
+    right: var(--cm-right);
+    top: var(--cm-top);
+    height: var(--cm-height);
+    z-index: 3;
+}
+
+/* OPTIONAL SECOND LOGO */
+.secondary-logo {
+    height: 60px;
+    margin-right: 90px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: var(--black);
+    height: var(--navbar-height);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.navbar ul img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    object-fit: contain;
+    display: block;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: var(--primary-blue);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+    .logo-section img {
+        width: 260px;
+    }
+
+    .cm-photo {
+        height: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .main-header {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+    }
+
+    .person-section {
+        justify-content: center;
+    }
+
+    .cm-photo {
+        position: static;
+        height: 100px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+}
