@@ -1,0 +1,85 @@
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background: #0b1325; /* deep official navy */
+    color: #d1d5db;
+    padding: 40px 0 30px;
+    font-size: 14px;
+}
+
+/* TOP LINKS */
+
+.footer-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 var(--container-padding);
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #9aa4b2;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+/* DIVIDER */
+
+.footer-divider {
+    max-width: 1200px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 20px auto;
+}
+
+/* LICENSE */
+
+.footer-middle {
+    text-align: center;
+    padding: 0 var(--container-padding);
+}
+
+.footer-middle p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.footer-middle a {
+    color: #22c55e; /* subtle green for CC link (allowed accent) */
+    text-decoration: none;
+}
+
+/* VISITOR COUNT */
+
+.footer-bottom {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.visitor-count {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #e5e7eb;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

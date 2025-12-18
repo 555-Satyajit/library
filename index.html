@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/membership.css">
     <link rel="stylesheet" href="css/news-section.css">
     <link rel="stylesheet" href="css/notice-links-section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
 
@@ -52,20 +54,19 @@
         </div>
 
         <!-- CM SECTION -->
-        <div class="person-section">
+        <!-- <div class="person-section">
 
             <div class="cm-text">
                 <strong>ଶ୍ରୀ ମୋହନ ଚରଣ ମାଝୀ</strong>
                 <p>ମାନ୍ୟବର ମୁଖ୍ୟମନ୍ତ୍ରୀ</p>
-            </div>
+            </div> -->
 
             <!-- CM PHOTO -->
-            <img class="cm-photo" src="public/images/cm-sm.png" alt="Chief Minister">
+            <!-- <img class="cm-photo" src="public/images/cm-sm.png" alt="Chief Minister"> -->
 
-            <!-- OPTIONAL SECOND LOGO (use later) -->
-            <!--
-            <img class="secondary-logo" src="public/images/second-logo.png" alt="Second Logo">
-            -->
+           
+            <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
+           
 
         </div>
 
@@ -453,6 +454,73 @@
 </section>
 
 
+ <section class="gallery-section">
+
+    <div class="gallery-header">
+        <span class="gallery-eyebrow">Gallery</span>
+        <h2>Our Image & Photo Gallery</h2>
+    </div>
+
+    <!-- TABS -->
+    <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="images">Image Gallery</button>
+        <button class="tab-btn" data-tab="photos">Photo Gallery</button>
+    </div>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery-bento active" id="images">
+
+        <div class="bento-item bento-large">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="">
+        </div>
+
+    </div>
+
+    <!-- PHOTO GALLERY -->
+    <div class="gallery-bento" id="photos">
+        <div class="bento-item bento-large">
+            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1544717305-996b815c338c" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="">
+        </div>
+
+        <div class="bento-item">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="">
+        </div>
+    </div>
+
+    <div class="gallery-footer">
+        <a href="#">View Full Gallery →</a>
+    </div>
+
+</section>
+
 
 <section class="notice-safe">
 
@@ -511,6 +579,34 @@
 
 
 
+<footer class="site-footer">
+
+    <div class="footer-top">
+        <ul class="footer-links">
+            <li><a href="#">Website Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-middle">
+        <p>
+            The content of this website is licensed under
+            <a href="#" target="_blank">
+                Creative Commons Attribution 4.0 International License
+            </a>.
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+        <span class="visitor-count">
+            Total Visitors: <strong id="visitorCount">253</strong>
+        </span>
+    </div>
+
+</footer>
 
 
 
@@ -524,6 +620,7 @@
     <script src="js/navsearch.js"></script>
     <script src="js/new-arrivals.js"></script>
     <script src="js/news-section.js"></script>
+    <script src="js/gallery.js"></script>
 
 
 </body>

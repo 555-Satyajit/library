@@ -199,8 +199,8 @@ body {
 
 /* OPTIONAL SECOND LOGO */
 .secondary-logo {
-    height: 60px;
-    margin-right: 90px;
+    height: 90px;
+    margin-right: -200px;
 }
 
 /* =========================
@@ -217,7 +217,7 @@ body {
     height: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding-left: 120px;
 }
