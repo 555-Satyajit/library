@@ -12,7 +12,7 @@
     --border-light: #e0e0e0;
 
     /* LAYOUT */
-    --container-padding: 100px;
+    --container-padding: 30px;
     --header-padding: 40px;
     --navbar-height: 52px;
     --header-height: 95px;
@@ -219,7 +219,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 120px;
+    padding-left: 40px;
 }
 
 .navbar ul img {
