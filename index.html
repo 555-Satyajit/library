@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harekrushna Mahatab State Library</title>
 
     <!-- CSS -->
@@ -43,51 +44,46 @@
 </div>
 
 <!-- HEADER + NAV WRAPPER -->
-<div class="header-wrapper">
+<!-- STICKY CONTAINER -->
+<div class="sticky-header">
 
-    <!-- MAIN HEADER -->
-    <div class="main-header">
+    <div class="header-wrapper">
 
-        <!-- LOGO -->
-        <div class="logo-section">
-            <img src="public/images/logo2.png" alt="Library Logo">
-        </div>
+        <!-- MAIN HEADER -->
+        <div class="main-header">
+            <div class="logo-section">
+                <img src="public/images/logo2.png" alt="Library Logo">
+            </div>
 
-        <!-- CM SECTION -->
-        <!-- <div class="person-section">
-
-            <div class="cm-text">
-                <strong>ଶ୍ରୀ ମୋହନ ଚରଣ ମାଝୀ</strong>
-                <p>ମାନ୍ୟବର ମୁଖ୍ୟମନ୍ତ୍ରୀ</p>
-            </div> -->
-
-            <!-- CM PHOTO -->
-            <!-- <img class="cm-photo" src="public/images/cm-sm.png" alt="Chief Minister"> -->
-
-           
             <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
-           
-
         </div>
 
-    </div>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+    <button class="hamburger" id="hamburgerBtn">☰</button>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#"><img src="public\images\home.png" alt="home"></a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">LIBRARY SERVICE</a></li>
-            <li><a href="#">NOTIFICATION</a></li>
-            <li><a href="#">BOOKS</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">SUCCESS STORIES</a></li>
-            <li><a href="#">RTI</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
+    <ul id="navMenu">
+        <li><a href="#"><img src="public/images/home.png" alt="home"></a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">LIBRARY SERVICE</a></li>
+        <li><a href="#">NOTIFICATION</a></li>
+        <li><a href="#">BOOKS</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">SUCCESS STORIES</a></li>
+        <li><a href="#">RTI</a></li>
+        <li><a href="#">CONTACT</a></li>
+
+        <!-- close button INSIDE mobile menu -->
+        <li class="nav-close-item">
+            <button id="navCloseBtn" class="nav-close-btn">✕</button>
+        </li>
+    </ul>
+</nav>
 
 </div>
+
+</div>
+
 
 
 

@@ -186,3 +186,104 @@
         flex-direction: column;
     }
 }
+/* =========================
+   MEMBERSHIP V3 RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .membership-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership-card.featured {
+        grid-column: span 2;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .membership-v3 {
+        padding: 70px 0;
+    }
+
+    /* HEADER */
+    .membership-header h2 {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .membership-header p {
+        font-size: 15px;
+    }
+
+    /* GRID → SINGLE COLUMN */
+    .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .membership-card.featured {
+        grid-column: auto;
+    }
+
+    /* CARD */
+    .membership-card {
+        padding: 26px;
+        border-radius: 16px;
+    }
+
+    .membership-card h3 {
+        font-size: 18px;
+    }
+
+    .membership-card .desc {
+        font-size: 14px;
+    }
+
+    /* BADGE */
+    .membership-card .badge {
+        left: 20px;
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    /* CTA PANEL */
+    .membership-cta-panel {
+        padding: 30px 24px;
+        margin-top: 70px;
+        gap: 26px;
+    }
+
+    .cta-text h3 {
+        font-size: 20px;
+    }
+
+    .cta-text p {
+        font-size: 14px;
+    }
+
+    .cta-actions {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .membership-header h2 {
+        font-size: 24px;
+    }
+
+    .membership-card {
+        padding: 22px;
+    }
+}
