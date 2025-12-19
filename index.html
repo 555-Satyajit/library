@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="css/membership.css">
     <link rel="stylesheet" href="css/news-section.css">
     <link rel="stylesheet" href="css/notice-links-section.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
 </head>
 <body>
 
@@ -58,20 +59,97 @@
             <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
         </div>
 
-        <!-- NAVBAR -->
+       <!-- NAVBAR -->
         <nav class="navbar">
     <button class="hamburger" id="hamburgerBtn">☰</button>
 
     <ul id="navMenu">
-        <li><a href="#"><img src="public/images/home.png" alt="home"></a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">LIBRARY SERVICE</a></li>
-        <li><a href="#">NOTIFICATION</a></li>
-        <li><a href="#">BOOKS</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">SUCCESS STORIES</a></li>
+        <li><a href="index.html"><img src="public/images/home.png" alt="home"></a></li>
+        
+        <!-- ABOUT US DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="ataglance.html">At a glance</a></li>
+                <li><a href="facilites.html">Facilities</a></li>
+                <li><a href="location.html">Location and Map</a></li>
+                <li><a href="librarypersonnel.html">Library Personnel</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+        </li>
+        
+        <!-- LIBRARY SERVICE DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li class="has-submenu">
+                    <a href="#">Membership <span class="arrow-right">▶</span></a>
+                    <ul class="submenu">
+                        <li><a href="lifetimemembership.html">Lifetime Membership</a></li>
+                        <li><a href="statememmbership.html">State Membership</a></li>
+                        <li><a href="bplmembership.html">BPL Membership</a></li>
+                        <li><a href="childrenmembership.html">Children Membership</a></li>
+                    </ul>
+                </li>
+                <li><a href="lifetimememmbers.html">Life time members</a></li>
+
+                <li class="has-submenu">
+                    <a href="readerservice.html">Reader Services<span class="arrow-right">▶</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Wifi Services</a></li>
+                        <li><a href="#">Aahara Kendra</a></li>
+                    </ul>
+                    <li><a href="magazine.html">Magazines</a></li>
+                    <li><a href="newspaper.html">Newspapers</a></li>
+                    <li><a href="literature.html">Language and Literature</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#"class="dropdown-toggle">BPL<span class="arrow-right">▶</span></a>
+                        <ul class="submenu">
+                            <li><a href="bpl1.html">Carrier Development </a></li>
+                            <li><a href="bpl2.html">Children Books</a></li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+        </li>
+        
+        <!-- Libraries DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="" class="dropdown-toggle">LIBRARY <span class="arrow"></span></a>
+        </li>
+        
+        <!-- GALLERY DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">GALLERY <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="photogallary.html">Photo Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="#">Events Gallery</a></li>
+            </ul>
+        </li>
+        
+        <!-- SUCCESS STORIES DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">SUCCESS STORIES <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="imagestory.html">Image Success Stories</a></li>
+                <li><a href="videostory.html">Video Success Stories</a></li>
+            </ul>
+        </li>
+
+         <!-- NOTIFICATION DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="tender.html">Tender</a></li>
+                <li><a href="notice.html">Notice</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </li>
+        
         <li><a href="#">RTI</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
 
         <!-- close button INSIDE mobile menu -->
         <li class="nav-close-item">
@@ -80,10 +158,8 @@
     </ul>
 </nav>
 
+    </div>
 </div>
-
-</div>
-
 
 
 

@@ -1,0 +1,197 @@
+/* =========================
+   BASE
+========================= */
+.atglance {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #111111;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 71, 161, 0.08) 0%,
+        rgba(13, 71, 161, 0.04) 35%,
+        #ffffff 100%
+    );
+}
+
+/* =========================
+   BANNER
+========================= */
+.atglance-banner {
+    height: 240px;
+    background: url("../../public/images/banner.jpg") center / cover no-repeat;
+    position: relative; /* positioning context */
+}
+
+/* Overlay */
+.atglance-banner-overlay {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(13, 71, 161, 0.85),
+        rgba(13, 71, 161, 0.45)
+    );
+}
+
+/* Title container – stays centered vertically */
+.atglance-banner-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.atglance-banner-content h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Back button – ONLY this moves */
+.back-home {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   AT A GLANCE DATA
+========================= */
+.atglance-body {
+    background: transparent;
+    padding: 70px 24px 90px;
+}
+
+.atglance-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 32px;
+}
+
+.atglance-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 28px 18px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card.active {
+    border-color: #0d47a1;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+/* Detail panel */
+.atglance-details {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 28px;
+}
+
+.detail {
+    display: none;
+}
+
+.detail.active {
+    display: block;
+}
+
+.atglance-details h3 {
+    color: #0d47a1;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   ABOUT US – AT A GLANCE
+========================= */
+.about-glance {
+    padding: 90px 24px;
+    border-top: 1px solid #e0e0e0;
+    background: transparent;
+}
+
+.about-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 50px;
+}
+
+.about-image img {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.about-text {
+    background: #ffffff;
+    padding: 32px;
+    border: 1px solid #e0e0e0;
+}
+
+.eyebrow {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.about-text h2 {
+    color: #0d47a1;
+    margin: 10px 0 20px;
+}
+
+.about-text p {
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+    .atglance-layout,
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .atglance-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .atglance-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .atglance-banner-content h1 {
+        font-size: 28px;
+    }
+
+    .back-home {
+        left: 16px;
+        bottom: 16px;
+    }
+}

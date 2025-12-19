@@ -1,0 +1,135 @@
+:root {
+    --primary: #0d47a1;
+    --text-dark: #111111;
+    --text-muted: #555555;
+    --border: #e0e0e0;
+    --bg-soft: #f4f8ff;
+}
+
+/* SECTION */
+.notice-section {
+    padding: 80px 0;
+    background: linear-gradient(
+        135deg,
+        rgba(13,71,161,0.05),
+        #ffffff
+    );
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/* HEADER */
+.notice-header {
+    margin-bottom: 40px;
+}
+
+.section-tag {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.notice-header h2 {
+    font-size: 32px;
+    color: var(--primary);
+    margin-top: 6px;
+}
+
+/* GRID */
+.notice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* CARD */
+.notice-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGE */
+.notice-image {
+    position: relative;
+}
+
+.notice-image img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* DATE BADGE */
+.date-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.date-badge .day {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.date-badge .month {
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+/* CONTENT */
+.notice-content {
+    padding: 20px 20px 24px;
+    background: var(--bg-soft);
+    flex-grow: 1;
+}
+
+.notice-content h3 {
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.notice-content p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* LINK */
+.view-link {
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .notice-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .notice-grid {
+        grid-template-columns: 1fr;
+    }
+}

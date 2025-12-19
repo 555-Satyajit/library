@@ -1,0 +1,222 @@
+1=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At a glance</title>
+       <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aboutus/ataglance.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-left">
+        <span><img src="public\images\phone.png" alt="phone"> +91 674 2514315</span>
+        <span><img src="public\images\mail.png" alt="mail"> hkmsl@rediffmail.com</span>
+    </div>
+
+    <div class="top-right">
+       <!-- SEARCH WRAPPER -->
+    <div class="search-wrapper">
+        <input type="text" placeholder="Search..." />
+        <button class="search-close">✕</button>
+    </div>
+
+    <a href="#" class="search-toggle">
+        <img src="public/images/search.png" alt="search">
+    </a>
+        <a href="#"><img src="public\images\ico-skip.png" alt="ico-skip"></a>
+        <a href="#"><img src="public\images\ico-accessibility.png" alt="ico-accessibility"></a>
+        <a href="#"><img src="public\images\ico-sitemap.png" alt="ico-sitemap"></a>
+        <a href="#">ଓଡ଼ିଆ</a>
+    </div>
+</div>
+
+<!-- HEADER + NAV WRAPPER -->
+<!-- STICKY CONTAINER -->
+<div class="sticky-header">
+
+    <div class="header-wrapper">
+
+        <!-- MAIN HEADER -->
+        <div class="main-header">
+            <div class="logo-section">
+                <img src="public/images/logo2.png" alt="Library Logo">
+            </div>
+
+            <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <ul id="navMenu">
+        <li><a href="#"><img src="public/images/home.png" alt="home"></a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">LIBRARY SERVICE</a></li>
+        <li><a href="#">NOTIFICATION</a></li>
+        <li><a href="#">BOOKS</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">SUCCESS STORIES</a></li>
+        <li><a href="#">RTI</a></li>
+        <li><a href="#">CONTACT</a></li>
+
+        <!-- close button INSIDE mobile menu -->
+        <li class="nav-close-item">
+            <button id="navCloseBtn" class="nav-close-btn">✕</button>
+        </li>
+    </ul>
+</nav>
+
+</div>
+</div>
+
+<!-- =========================
+     AT A GLANCE PAGE
+========================= -->
+
+<section class="atglance">
+
+    <!-- ========= BANNER ========= -->
+  <div class="atglance-banner">
+    <div class="atglance-banner-overlay">
+
+        <!-- Title (stays centered vertically) -->
+        <div class="atglance-banner-content">
+            <h1>At a Glance</h1>
+        </div>
+
+        <!-- Back button (moves independently) -->
+        <a href="index.html" class="back-home back-fixed">
+            ← Back to home
+        </a>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= ABOUT US – AT A GLANCE ========= -->
+    <div class="about-glance">
+
+        <div class="about-layout">
+
+            <!-- IMAGE -->
+            <div class="about-image">
+                <img src="public\images\banner.jpg" alt="Harekrushna Mahtab State Library">
+            </div>
+
+            <!-- TEXT -->
+            <div class="about-text">
+                <span class="eyebrow">About Us</span>
+                <h2>At a Glance</h2>
+
+                <p>
+                    The concept of Harekrushna Mahtab State Library was conceived during
+                    the 1st Five Year Plan under the advice of Government of India and was
+                    completed in 1959 with a majestic building of around 16000 sq.ft.
+                    carpet area, situated on a land of 3 acres in the capital city of
+                    Bhubaneswar.
+                </p>
+
+                <p>
+                    In 1967, the building was named Gandhi Bhawan to commemorate the birth
+                    centenary of Mahatma Gandhi. In 1987, the building was renovated and
+                    fully utilized for the functioning of both the State Library of Odisha
+                    and the Bhubaneswar Public Library.
+                </p>
+
+                <p>
+                    The institution was later renamed Harekrushna Mahtab State Library in
+                    memory of Dr. Harekrushna Mahtab, the builder of modern Odisha.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ========= AT A GLANCE DATA ========= -->
+    <div class="atglance-body">
+
+        <div class="atglance-layout">
+
+            <!-- LEFT: CARDS -->
+            <div class="atglance-cards">
+                <button class="card active" data-target="users">Users per day</button>
+                <button class="card" data-target="newspapers">Newspapers</button>
+                <button class="card" data-target="magazines">Magazines</button>
+                <button class="card" data-target="seats">Number of seats</button>
+                <button class="card" data-target="floors">Floor areas</button>
+                <button class="card" data-target="libraries">Different HKM State Library</button>
+                <button class="card" data-target="staff">Staff</button>
+            </div>
+
+            <!-- RIGHT: DETAILS -->
+            <div class="atglance-details">
+
+                <div class="detail active" id="users">
+                    <h3>Number of Users per Day</h3>
+                    <p><strong>Total Users:</strong> 350</p>
+                    <ul>
+                        <li>Bhubaneswar Public Library (BPL) – 180</li>
+                        <li>Language & Literature – 10</li>
+                        <li>State Library – 50</li>
+                        <li>Serials – 80</li>
+                        <li>Children – 30</li>
+                    </ul>
+                </div>
+
+                <div class="detail" id="newspapers">
+                    <h3>Newspapers</h3>
+                    <p>Daily national, regional and local newspapers for readers.</p>
+                </div>
+
+                <div class="detail" id="magazines">
+                    <h3>Magazines</h3>
+                    <p>Educational, cultural, literary and competitive magazines.</p>
+                </div>
+
+                <div class="detail" id="seats">
+                    <h3>Number of Seats</h3>
+                    <p>Comfortable seating facilities for readers and researchers.</p>
+                </div>
+
+                <div class="detail" id="floors">
+                    <h3>Floor Areas</h3>
+                    <p>Multiple reading halls, reference areas and archives.</p>
+                </div>
+
+                <div class="detail" id="libraries">
+                    <h3>Different HKM State Library</h3>
+                    <p>Separate State Library and Public Library sections.</p>
+                </div>
+
+                <div class="detail" id="staff">
+                    <h3>Staff</h3>
+                    <p>Qualified librarians and trained supporting staff.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</section>
+
+
+
+<script src="js/aboutus/ataglance.js"></script>
+
+
+</body>
+</html>

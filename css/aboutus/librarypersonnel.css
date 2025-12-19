@@ -1,0 +1,190 @@
+/* =========================
+   MEMBERS SECTION
+========================= */
+
+.members-section {
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 80px 24px;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 71, 161, 0.06),
+        #ffffff
+    );
+}
+
+/* HEADER */
+.members-header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.eyebrow {
+    font-size: 14px;
+    color: #555;
+}
+
+.members-header h2 {
+    font-size: 32px;
+    color: #0d47a1;
+    margin-top: 6px;
+}
+
+/* =========================
+   COUNCIL GRID
+========================= */
+
+.council-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.member-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.member-image {
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 16px 18px 22px;
+}
+
+.member-info h4 {
+    color: #0d47a1;
+    margin-bottom: 6px;
+}
+
+.member-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* SHARE BUTTON */
+.share-btn {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background: #0d47a1;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    overflow-x: auto;
+}
+
+.members-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.members-table thead {
+    background: #0d47a1;
+    color: #ffffff;
+}
+
+.members-table th,
+.members-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.members-table img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .council-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .council-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   SOCIAL ICON TOGGLE
+========================= */
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Social icons container */
+.social-icons {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    opacity: 0;
+    transform: translateX(10px);
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Individual icon */
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #0d47a1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ACTIVE STATE */
+.member-card.show-socials .social-icons {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
