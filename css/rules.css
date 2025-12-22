@@ -1,0 +1,186 @@
+.rules-docs-section {
+            padding: 90px 24px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #111111;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(13, 71, 161, 0.06) 0%,
+                    rgba(13, 71, 161, 0.03) 35%,
+                    #ffffff 100%
+                );
+        }
+
+        .rules-docs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .rules-docs-eyebrow {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #555555;
+            letter-spacing: 0.5px;
+        }
+
+        .rules-docs-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0d47a1;
+            margin: 6px 0 14px;
+        }
+
+        .rules-docs-intro {
+            max-width: 850px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        /* Grid */
+        .rules-docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        /* Card - Enhanced Design */
+        .rules-doc-card {
+            border: 1px solid #e8e8e8;
+            background: #ffffff;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rules-doc-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0d47a1 0%, #1976d2 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .rules-doc-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(13, 71, 161, 0.12);
+            border-color: #d0d0d0;
+        }
+
+        .rules-doc-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Title */
+        .doc-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            line-height: 1.4;
+        }
+
+        /* Description */
+        .doc-desc {
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: #666666;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        /* Meta */
+        .doc-meta {
+            font-size: 13px;
+            color: #777777;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 14px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #0d47a1;
+        }
+
+        .doc-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .doc-meta strong {
+            color: #333333;
+            min-width: 85px;
+        }
+
+        /* Actions */
+        .doc-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .doc-btn {
+            flex: 1;
+            padding: 11px 16px;
+            border: 2px solid #0d47a1;
+            color: #0d47a1;
+            text-decoration: none;
+            font-size: 13.5px;
+            font-weight: 600;
+            background: #ffffff;
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .doc-btn:hover {
+            background: #0d47a1;
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(13, 71, 161, 0.2);
+        }
+
+        .doc-btn.secondary {
+            border-color: #d0d0d0;
+            color: #444444;
+            background: #f8f9fa;
+        }
+
+        .doc-btn.secondary:hover {
+            border-color: #0d47a1;
+            background: #f0f4f8;
+            color: #0d47a1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .rules-docs-title {
+                font-size: 24px;
+            }
+
+            .rules-docs-section {
+                padding: 60px 20px;
+            }
+
+            .rules-doc-card {
+                padding: 24px;
+            }
+
+            .doc-actions {
+                flex-direction: column;
+            }
+        }
