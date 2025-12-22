@@ -6,6 +6,7 @@
     <title>At a glance</title>
        <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/aboutus/ataglance.css">
+  <link rel="stylesheet" href="css/libraries.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -48,20 +49,97 @@
             <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
         </div>
 
-        <!-- NAVBAR -->
+       <!-- NAVBAR -->
         <nav class="navbar">
     <button class="hamburger" id="hamburgerBtn">☰</button>
 
     <ul id="navMenu">
-        <li><a href="#"><img src="public/images/home.png" alt="home"></a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">LIBRARY SERVICE</a></li>
-        <li><a href="#">NOTIFICATION</a></li>
-        <li><a href="#">BOOKS</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">SUCCESS STORIES</a></li>
+        <li><a href="index.html"><img src="public/images/home.png" alt="home"></a></li>
+        
+        <!-- ABOUT US DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="ataglance.html">At a glance</a></li>
+                <li><a href="facilites.html">Facilities</a></li>
+                <li><a href="location.html">Location and Map</a></li>
+                <li><a href="librarypersonnel.html">Library Personnel</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+        </li>
+        
+        <!-- LIBRARY SERVICE DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li class="has-submenu">
+                    <a href="#">Membership <span class="arrow-right">▶</span></a>
+                    <ul class="submenu">
+                        <li><a href="lifetimemembership.html">Lifetime Membership</a></li>
+                        <li><a href="statememmbership.html">State Membership</a></li>
+                        <li><a href="bplmembership.html">BPL Membership</a></li>
+                        <li><a href="childrenmembership.html">Children Membership</a></li>
+                    </ul>
+                </li>
+                <li><a href="lifetimememmbers.html">Life time members</a></li>
+
+                <li class="has-submenu">
+                    <a href="readerservice.html">Reader Services<span class="arrow-right">▶</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Wifi Services</a></li>
+                        <li><a href="#">Aahara Kendra</a></li>
+                    </ul>
+                    <li><a href="magazine.html">Magazines</a></li>
+                    <li><a href="newspaper.html">Newspapers</a></li>
+                    <li><a href="literature.html">Language and Literature</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#"class="dropdown-toggle">BPL<span class="arrow-right">▶</span></a>
+                        <ul class="submenu">
+                            <li><a href="bpl1.html">Carrier Development </a></li>
+                            <li><a href="bpl2.html">Children Books</a></li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+        </li>
+        
+        <!-- Libraries DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="2libraries.html" class="dropdown-toggle">LIBRARY <span class="arrow"></span></a>
+        </li>
+        
+        <!-- GALLERY DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">GALLERY <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="photogallary.html">Photo Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="#">Events Gallery</a></li>
+            </ul>
+        </li>
+        
+        <!-- SUCCESS STORIES DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">SUCCESS STORIES <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="imagestory.html">Image Success Stories</a></li>
+                <li><a href="videostory.html">Video Success Stories</a></li>
+            </ul>
+        </li>
+
+         <!-- NOTIFICATION DROPDOWN -->
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="tender.html">Tender</a></li>
+                <li><a href="notice.html">Notice</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </li>
+        
         <li><a href="#">RTI</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
 
         <!-- close button INSIDE mobile menu -->
         <li class="nav-close-item">
@@ -70,7 +148,7 @@
     </ul>
 </nav>
 
-</div>
+    </div>
 </div>
 
 <!-- =========================
@@ -143,13 +221,13 @@
 
 
 
-    <!-- ========= AT A GLANCE DATA ========= -->
+    <!-- ========= AT A GLANCE DATA =========
     <div class="atglance-body">
 
         <div class="atglance-layout">
 
             <!-- LEFT: CARDS -->
-            <div class="atglance-cards">
+            <!-- <div class="atglance-cards">
                 <button class="card active" data-target="users">Users per day</button>
                 <button class="card" data-target="newspapers">Newspapers</button>
                 <button class="card" data-target="magazines">Magazines</button>
@@ -157,10 +235,10 @@
                 <button class="card" data-target="floors">Floor areas</button>
                 <button class="card" data-target="libraries">Different HKM State Library</button>
                 <button class="card" data-target="staff">Staff</button>
-            </div>
+            </div> -->
 
             <!-- RIGHT: DETAILS -->
-            <div class="atglance-details">
+            <!-- <div class="atglance-details">
 
                 <div class="detail active" id="users">
                     <h3>Number of Users per Day</h3>
@@ -172,9 +250,9 @@
                         <li>Serials – 80</li>
                         <li>Children – 30</li>
                     </ul>
-                </div>
+                </div> -->
 
-                <div class="detail" id="newspapers">
+                <!-- <div class="detail" id="newspapers">
                     <h3>Newspapers</h3>
                     <p>Daily national, regional and local newspapers for readers.</p>
                 </div>
@@ -211,11 +289,134 @@
     </div>
 
     
+</section> -->
+
+<section class="libraries-section">
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="libraries-header">
+            <span class="section-tag">Library</span>
+            <h2>Libraries</h2>
+            <p>Detailed information about the State Library and Public Library</p>
+        </div>
+
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="libraries-grid">
+
+            <!-- ================= STATE LIBRARY ================= -->
+            <div class="library-column">
+
+                <h3 class="library-title">Harekrushna Mahtab State Library</h3>
+
+                <div class="accordion-group">
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            About the Library
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>
+                                The Harekrushna Mahtab State Library functions as a premier reference
+                                and research institution catering to scholars, researchers, and the
+                                general reading public of Odisha.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Services
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Reference and Research Services</li>
+                                <li>Circulation of Books and Periodicals</li>
+                                <li>Compilation of Odisha State Bibliography</li>
+                                <li>Reprography Services</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Major Sections
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Research & Reference Section</li>
+                                <li>Language & Literature Section</li>
+                                <li>Biography & Official Documents</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ================= PUBLIC LIBRARY ================= -->
+            <div class="library-column">
+
+                <h3 class="library-title">Bhubaneswar Public Library</h3>
+
+                <div class="accordion-group">
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            About the Library
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p>
+                                The Bhubaneswar Public Library provides lending and reading facilities
+                                to the general public, students, and children.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Services
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Lending Services</li>
+                                <li>Children’s Reading Section</li>
+                                <li>Career Development Materials</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Sections
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Children Section</li>
+                                <li>Text Book & Career Development</li>
+                                <li>Braille Section</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 
 
+
 <script src="js/aboutus/ataglance.js"></script>
+
 
 
 </body>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Personnel</title>
+    <link rel="stylesheet" href="css/publication.css">
+    <link rel="stylesheet" href="css/aboutus/ataglance.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-left">
+        <span><img src="public\images\phone.png" alt="phone"> +91 674 2514315</span>
+        <span><img src="public\images\mail.png" alt="mail"> hkmsl@rediffmail.com</span>
+    </div>
+
+    <div class="top-right">
+       <!-- SEARCH WRAPPER -->
+    <div class="search-wrapper">
+        <input type="text" placeholder="Search..." />
+        <button class="search-close">✕</button>
+    </div>
+
+    <a href="#" class="search-toggle">
+        <img src="public/images/search.png" alt="search">
+    </a>
+        <a href="#"><img src="public\images\ico-skip.png" alt="ico-skip"></a>
+        <a href="#"><img src="public\images\ico-accessibility.png" alt="ico-accessibility"></a>
+        <a href="#"><img src="public\images\ico-sitemap.png" alt="ico-sitemap"></a>
+        <a href="#">ଓଡ଼ିଆ</a>
+    </div>
+</div>
+
+<!-- HEADER + NAV WRAPPER -->
+<!-- STICKY CONTAINER -->
+<div class="sticky-header">
+
+    <div class="header-wrapper">
+
+        <!-- MAIN HEADER -->
+        <div class="main-header">
+            <div class="logo-section">
+                <img src="public/images/logo2.png" alt="Library Logo">
+            </div>
+
+            <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <ul id="navMenu">
+        <li><a href="#"><img src="public/images/home.png" alt="home"></a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">LIBRARY SERVICE</a></li>
+        <li><a href="#">NOTIFICATION</a></li>
+        <li><a href="#">BOOKS</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">SUCCESS STORIES</a></li>
+        <li><a href="#">RTI</a></li>
+        <li><a href="#">CONTACT</a></li>
+
+        <!-- close button INSIDE mobile menu -->
+        <li class="nav-close-item">
+            <button id="navCloseBtn" class="nav-close-btn">✕</button>
+        </li>
+    </ul>
+</nav>
+
+</div>
+
+</div>
+
+
+
+            <!-- ========= BANNER ========= -->
+  <div class="atglance-banner">
+    <div class="atglance-banner-overlay">
+
+        <!-- Title (stays centered vertically) -->
+        <div class="atglance-banner-content">
+            <h1>PUBLICATIONS</h1>
+        </div>
+
+        <!-- Back button (moves independently) -->
+        <a href="index.html" class="back-home back-fixed">
+            ← Back to home
+        </a>
+
+    </div>
+
+
+<section class="publication-section">
+    <div class="publication-container">
+
+        <!-- HEADER -->
+        <div class="publication-header">
+            <span class="publication-eyebrow">Library Resources</span>
+            <h2 class="publication-title">Publications</h2>
+            <p class="publication-intro">
+                This section provides access to official publications issued by the
+                Odisha State Library and associated institutions, including books,
+                journals, reports, bulletins, and special publications.
+            </p>
+        </div>
+
+        <!-- CATEGORY TOGGLE -->
+        <div class="publication-categories">
+            <button class="active" data-filter="all">All Publications</button>
+            <button data-filter="Book">Books</button>
+            <button data-filter="Journal">Journals</button>
+            <button data-filter="Report">Reports</button>
+            <button data-filter="Bulletin">Bulletins</button>
+            <button data-filter="Special">Special Publications</button>
+        </div>
+
+        <!-- TABLE -->
+        <div class="publication-table-wrapper">
+            <table class="publication-table">
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Title of Publication</th>
+                        <th>Type</th>
+                        <th>Author / Issuing Authority</th>
+                        <th>Language</th>
+                        <th>Year</th>
+                        <th>Availability</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr data-type="Report">
+                        <td>1</td>
+                        <td>Annual Library Report</td>
+                        <td>Report</td>
+                        <td>Odisha State Library</td>
+                        <td>English</td>
+                        <td>2024</td>
+                        <td>Available</td>
+                        <td>👁</td>
+                    </tr>
+
+                    <tr data-type="Book">
+                        <td>2</td>
+                        <td>Odia Literary Heritage</td>
+                        <td>Book</td>
+                        <td>—</td>
+                        <td>Odia</td>
+                        <td>2023</td>
+                        <td>Available</td>
+                        <td>👁</td>
+                    </tr>
+
+                    <tr data-type="Bulletin">
+                        <td>3</td>
+                        <td>Library Services Bulletin</td>
+                        <td>Bulletin</td>
+                        <td>Technical Services Division</td>
+                        <td>English</td>
+                        <td>2022</td>
+                        <td>Not Available</td>
+                        <td>—</td>
+                    </tr>
+
+                    <tr data-type="Journal">
+                        <td>4</td>
+                        <td>Journal of Library Science</td>
+                        <td>Journal</td>
+                        <td>—</td>
+                        <td>English</td>
+                        <td>2021</td>
+                        <td>Available</td>
+                        <td>👁</td>
+                    </tr>
+
+                    <tr data-type="Special">
+                        <td>5</td>
+                        <td>Centenary Special Publication</td>
+                        <td>Special</td>
+                        <td>Odisha State Library</td>
+                        <td>Odia</td>
+                        <td>2020</td>
+                        <td>Available</td>
+                        <td>👁</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================
+     TOGGLE SCRIPT
+========================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".publication-categories button");
+    const rows = document.querySelectorAll(".publication-table tbody tr");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            /* Update active state */
+            buttons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            /* Filter table rows */
+            rows.forEach(row => {
+                const type = row.getAttribute("data-type");
+
+                if (filter === "all" || type === filter) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    });
+});
+</script>
+
+
+
+
+
+</div>
+</body>
+</html>
