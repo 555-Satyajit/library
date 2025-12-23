@@ -40,11 +40,17 @@
         }
 
         /* Grid */
-        .rules-docs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-        }
+       .rules-docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    justify-items: center;   /* KEY FIX */
+}
+.rules-doc-card {
+    max-width: 420px;        /* prevents over-stretch */
+    width: 100%;
+}
+
 
         /* Card - Enhanced Design */
         .rules-doc-card {
