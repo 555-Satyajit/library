@@ -17,7 +17,7 @@
 
 .notice-header h2 {
     font-size: 26px;
-    color: var(--text-dark);
+    color: var(--primary-blue);
     border-bottom: 2px solid var(--border-light);
     padding-bottom: 10px;
 }
@@ -39,27 +39,47 @@
     border: 1px solid var(--border-light);
     padding: 20px;
     background: var(--white);
+    display: flex;
+    flex-direction: column;
 }
 
 .notice-box h3 {
     font-size: 18px;
     color: var(--text-dark);
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     border-bottom: 1px solid var(--border-light);
     padding-bottom: 6px;
 }
 
-/* LIST */
+/* =========================
+   SCROLL AREA
+========================= */
 
-.notice-box ul {
-    list-style: none;
+.notice-scroll {
+    height: 160px;                  /* FIXED HEIGHT */
+    overflow: hidden;
+    position: relative;
     margin-bottom: 12px;
 }
+
+.notice-scroll ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scrollUp 14s linear infinite;
+}
+
+/* Pause on hover (important) */
+.notice-scroll:hover ul {
+    animation-play-state: paused;
+}
+
+/* LIST ITEMS */
 
 .notice-box li {
     font-size: 14px;
     color: var(--text-muted);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     line-height: 1.5;
 }
 
@@ -77,12 +97,32 @@
     font-size: 14px;
     color: var(--primary-blue);
     text-decoration: none;
+    margin-top: auto;
 }
 
-/* RESPONSIVE */
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 900px) {
     .notice-grid {
         grid-template-columns: 1fr;
+    }
+
+    .notice-scroll {
+        height: 140px;
     }
 }

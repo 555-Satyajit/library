@@ -3,8 +3,13 @@
 ========================= */
 
 .about-section {
-    padding: var(--container-padding) 0;
-    background: var(--white);
+    padding: 90px 0;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 71, 161, 0.08) 0%,
+        rgba(13, 71, 161, 0.04) 35%,
+        #ffffff 100%
+    );
     border-top: 1px solid var(--border-light);
 }
 
@@ -13,26 +18,27 @@
     margin: auto;
     padding: 0 var(--container-padding);
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 80px;
-    align-items: center;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 70px;
+    align-items: start;
 }
 
-/* LEFT CONTENT */
+/* =========================
+   LEFT CONTENT
+========================= */
 
 .about-label {
-    display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--primary-blue);
     text-transform: uppercase;
     margin-bottom: 14px;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .about-title {
-    font-family: var(--font-primary);
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.25;
     color: var(--text-dark);
     margin-bottom: 22px;
@@ -41,69 +47,97 @@
 .about-text {
     font-size: 16px;
     color: var(--text-muted);
-    line-height: 1.7;
+    line-height: 1.75;
     margin-bottom: 16px;
-    max-width: 520px;
+    max-width: 560px;
 }
 
 .about-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 28px;
+    margin-top: 26px;
+    padding: 13px 34px;
     background: var(--primary-blue);
     color: var(--white);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
     border-radius: 4px;
-    transition: background 0.3s ease;
+    display: inline-block;
 }
 
-.about-btn:hover {
-    background: #0b3c8a;
-}
-
-/* RIGHT VISUAL */
+/* =========================
+   RIGHT COLUMN STACK
+========================= */
 
 .about-visual {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 22px; /* KEY FIX */
 }
 
+/* =========================
+   CARDS
+========================= */
+
 .about-card {
+    background: #ffffff;
     padding: 30px;
-    background: #f7f9fc;
     border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+.about-card.outlined {
+    box-shadow: none;
+    border: 1px solid var(--border-light);
 }
 
 .about-card h3 {
     font-size: 20px;
-    color: var(--text-dark);
     margin-bottom: 10px;
+    color: var(--text-dark);
 }
 
 .about-card p {
     font-size: 15px;
     color: var(--text-muted);
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
-.about-card.outlined {
-    background: transparent;
-    border: 1px solid var(--border-light);
+/* =========================
+   TIMING CARD (SEPARATE)
+========================= */
+
+.timing-card {
+    border-left: 4px solid var(--primary-blue);
 }
 
-
-.about-section {
-    background: linear-gradient(
-        135deg,
-        rgba(13, 71, 161, 0.08) 0%,
-        rgba(13, 71, 161, 0.04) 35%,
-        #ffffff 100%
-    );
+.timing-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
 }
 
+.timing-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14.5px;
+    border-bottom: 1px dashed var(--border-light);
+}
+
+.timing-list li span {
+    color: var(--text-muted);
+}
+
+.timing-list li strong {
+    font-weight: 600;
+}
+
+.timing-list li.highlight {
+    color: #b71c1c;
+    font-weight: 600;
+    border-bottom: none;
+    padding-top: 14px;
+}
 
 /* =========================
    RESPONSIVE
@@ -117,15 +151,11 @@
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        padding: 70px 0;
-    }
-
     .about-title {
         font-size: 30px;
     }
 
-    .about-container {
-        padding: 0 24px;
+    .about-section {
+        padding: 70px 0;
     }
 }

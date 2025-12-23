@@ -29,7 +29,7 @@
 
 .news-title {
     font-size: 34px;
-    color: var(--text-dark);
+    color: var( --primary-blue);
     margin-top: 6px;
 }
 
