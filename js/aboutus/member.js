@@ -20,3 +20,4 @@ document.addEventListener("click", () => {
         card.classList.remove("show-socials");
     });
 });
+

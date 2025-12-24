@@ -571,7 +571,7 @@ body {
         justify-content: space-between;
     }
     
-    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .arrow-right {
+    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .bi bi-chevron-right {
         font-size: 8px;
         margin-left: 10px;
     }
@@ -642,7 +642,7 @@ body {
         width: 100% !important;
         left: 0 !important;
         top: 0 !important;
-        height: auto !important ;
+        height: auto !important;
     }
     
     .navbar ul li.has-dropdown .dropdown-menu li {
@@ -684,7 +684,7 @@ body {
         justify-content: space-between;
     }
     
-    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .arrow-right {
+    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .bi bi-chevron-right {
         font-size: 10px;
         transition: transform 0.3s ease;
         margin-left: 8px;
@@ -699,12 +699,16 @@ body {
         display: none !important;
         position: relative !important;
         width: 100% !important;
+        left: 0 !important;  /* ADD THIS */
+        top: 0 !important;   /* ADD THIS */
+        height: auto !important;  /* ADD THIS */
     }
     
     .navbar ul li.has-dropdown .dropdown-menu .submenu li {
         width: 100% !important;
         margin: 0 !important;
         display: block !important;
+        position: relative !important;  /* ADD THIS */
     }
     
     .navbar ul li.has-dropdown .dropdown-menu .submenu li a {
@@ -714,6 +718,7 @@ body {
         display: block !important;
         width: 100% !important;
         transition: color 0.2s ease;
+        text-decoration: none !important;  /* ADD THIS */
     }
     
     .navbar ul li.has-dropdown .dropdown-menu .submenu li a:hover {
@@ -726,11 +731,10 @@ body {
         opacity: 1 !important;
     }
     
-    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu.active > a .arrow-right {
+    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu.active > a .bi bi-chevron-right {
         transform: rotate(90deg);
     }
 }
-
 
 
 /* ===============================
