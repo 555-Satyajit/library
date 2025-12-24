@@ -1047,6 +1047,20 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+}
+
 /* =========================
    PAGINATION 
 ========================= */
