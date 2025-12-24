@@ -5583,3 +5583,136 @@ tbody tr:last-child td {
         grid-template-columns: 1fr;
     }
 }
+/* ===============================
+   LIBRARIES SECTION (AT A GLANCE 2ND SECTION)
+================================ */
+
+.libsx-section {
+    padding: 80px 0;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 71, 161, 0.04),
+        #ffffff
+    );
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* CONTAINER */
+.libsx-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/* HEADER */
+.libsx-header {
+    margin-bottom: 50px;
+}
+
+.libsx-tag {
+    font-size: 13px;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.libsx-header h2 {
+    font-size: 32px;
+    color: #0d47a1;
+    margin-top: 6px;
+}
+
+.libsx-header p {
+    color: #555555;
+}
+
+/* GRID */
+.libsx-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* COLUMN */
+.libsx-column {
+    background: #f7f9fd;
+    padding: 28px 28px 32px;
+    border-radius: 14px;
+    border-left: 4px solid #0d47a1;
+}
+
+/* TITLE */
+.libsx-title {
+    font-size: 22px;
+    color: #0d47a1;
+    margin-bottom: 18px;
+}
+
+/* ACCORDION */
+.libsx-accordion {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+/* ITEM */
+.libsx-item + .libsx-item {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* HEADER BUTTON */
+.libsx-header-btn {
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    padding: 16px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* ICON */
+.libsx-icon {
+    font-size: 20px;
+    color: #0d47a1;
+    transition: transform 0.2s ease;
+}
+
+/* BODY */
+.libsx-body {
+    display: none;
+    padding: 16px 18px 20px;
+    background: #f9fbff;
+}
+
+.libsx-body p,
+.libsx-body li {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.libsx-body ul {
+    padding-left: 18px;
+}
+
+/* ACTIVE */
+.libsx-item.active .libsx-body {
+    display: block;
+}
+
+.libsx-item.active .libsx-icon {
+    transform: rotate(45deg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .libsx-grid {
+        grid-template-columns: 1fr;
+    }
+}

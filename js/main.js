@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     initHeroFlipbook();
     initCards();
-    initAccordions();
+    initLibsxAccordions();
     initMemberShare();
     initMagazineToggle();
     initPersonnelPagination();
@@ -147,13 +147,13 @@ function initHeroFlipbook() {
 /* ===============================
    ACCORDIONS (ALL PAGES)
 ================================ */
-function initAccordions() {
-    const headers = document.querySelectorAll(".accordion-header");
+function initLibsxAccordions() {
+    const headers = document.querySelectorAll(".libsx-header-btn");
     if (!headers.length) return;
 
     headers.forEach(header => {
         header.addEventListener("click", () => {
-            header.parentElement.classList.toggle("active");
+            header.closest(".libsx-item").classList.toggle("active");
         });
     });
 }
@@ -228,6 +228,10 @@ function initPersonnelPagination() {
     setupPersonnelPagination();
     displayPersonnelPage(1);
 }
+
+/* ===============================
+   Table with toogle PAGINATION
+================================ */
 
 function initMagazinePagination() {
 
@@ -665,7 +669,7 @@ function initMemberShare() {
 }
 
 /* ===============================
-   CARD → DETAIL TOGGLE ata glance
+   CARD → DETAIL TOGGLE at a glance
 ================================ */
 
 function initCards() {
