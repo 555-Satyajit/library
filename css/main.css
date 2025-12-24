@@ -2534,7 +2534,7 @@ body {
 ========================= */
 .atglance-banner {
     height: 240px;
-     background: url("public\images\banner.jpg") center / cover no-repeat;
+     background: url("https://raw.githubusercontent.com/555-Satyajit/library/refs/heads/main/public/images/banner.jpg") center / cover no-repeat;
     position: relative; /* positioning context */
 }
 
