@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/library-services/lifetimememmbers.css">
     <link rel="stylesheet" href="css/aboutus/ataglance.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -58,14 +60,14 @@
         
         <!-- ABOUT US DROPDOWN -->
         <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow">▼</span></a>
+            <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"></span></a>
             <ul class="dropdown-menu">
                 <li><a href="ataglance.html">At a glance</a></li>
                 <li><a href="facilites.html">Facilities</a></li>
                 <li><a href="location.html">Location and Map</a></li>
                 <li><a href="librarypersonnel.html">Library Personnel</a></li>
                 <li class="has-submenu">
-                    <a href="#">Act & Rules <span class="arrow-right">▶</span></a>
+                    <a href="#">Act & Rules <span class="arrow-right"></span></a>
                     <ul class="submenu">
                         <li><a href="libraryrules.html">Library Rules</a></li>
                         <li><a href="membershiprule.html">Membership Rules</a></li>
@@ -79,10 +81,10 @@
         
         <!-- LIBRARY SERVICE DROPDOWN -->
         <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow">▼</span></a>
+            <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow"></span></a>
             <ul class="dropdown-menu">
                 <li class="has-submenu">
-                    <a href="#">Membership <span class="arrow-right">▶</span></a>
+                    <a href="#">Membership <span class="arrow-right"></span></a>
                     <ul class="submenu">
                         <li><a href="lifetimemembership.html">Lifetime Membership</a></li>
                         <li><a href="statememmbership.html">State Membership</a></li>
@@ -112,14 +114,14 @@
         
         <!-- GALLERY DROPDOWN -->
         <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">GALLERY <span class="arrow">▼</span></a>
+            <a href="#" class="dropdown-toggle">GALLERY <span class="arrow"></span></a>
             <ul class="dropdown-menu">
                 <li><a href="photogallary.html">Photo Gallery</a></li>
                 <li><a href="videogallery.html">Video Gallery</a></li>
                 <li><a href="eventsgallery.html">Events Gallery</a></li>
                 <!-- Success Stories DROPDOWN -->
                 <li class="has-submenu">
-                    <a href="#">Success Stories <span class="arrow-right">▶</span></a>
+                    <a href="#">Success Stories <span class="arrow-right"></span></a>
                     <ul class="submenu">
                         <li><a href="imagestory.html">Image Success Stories</a></li>
                         <li><a href="videostory.html">Video Success Stories</a></li>
@@ -133,7 +135,7 @@
 
          <!-- NOTIFICATION DROPDOWN -->
         <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow">▼</span></a>
+            <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow"></span></a>
             <ul class="dropdown-menu">
                 <li><a href="tender.html">Tender</a></li>
                 <li><a href="notice.html">Notice</a></li>
@@ -175,205 +177,70 @@
 
   </div>
 
-<div class="page-wrapper">
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="container">
-                <p class="eyebrow">Gallery</p>
-                <h1 class="page-title">Events Gallery</h1>
-        </section>
+<section class="members-page">
+    <div class="members-container">
 
-        <!-- Members Gallery -->
-       <!-- Members Gallery -->
-<section class="members-section">
-    <div class="container">
+        <!-- HERO -->
+        <div class="members-hero">
+            <span class="members-eyebrow">Gallery</span>
+            <h1 class="members-title">Events Gallery</h1>
+            <p class="members-description">
+                A visual archive of literary, cultural, and educational events
+                organized by the HKM State Library.
+            </p>
+        </div>
+
+        <!-- EVENTS GRID -->
         <div class="members-grid">
-            
-            <!-- Member Card 1 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024001</div>
+
+            <!-- EVENT CARD -->
+            <div class="members-card">
+                <div class="members-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop" alt="Event">
+                    <div class="members-overlay">
+                        <span>Event ID: EV2024001</span>
                     </div>
                 </div>
-                <div class="member-info">
-                    <h3 class="member-name">Literary Excellence Awards 2024</h3>
-                    <p class="member-designation">Annual Award Ceremony</p>
-                    <p class="member-year">Scheduled: January 15, 2025</p>
+                <div class="members-info">
+                    <h3>Literary Excellence Awards 2024</h3>
+                    <p>Annual Award Ceremony</p>
+                    <span>January 15, 2025</span>
                 </div>
             </div>
 
-            <!-- Member Card 2 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024002</div>
+            <div class="members-card">
+                <div class="members-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=800&fit=crop" alt="Event">
+                    <div class="members-overlay">
+                        <span>Event ID: EV2024002</span>
                     </div>
                 </div>
-                <div class="member-info">
-                    <h3 class="member-name">Poetry Workshop Series</h3>
-                    <p class="member-designation">Monthly Workshop</p>
-                    <p class="member-year">Next Session: December 28, 2024</p>
+                <div class="members-info">
+                    <h3>Poetry Workshop Series</h3>
+                    <p>Monthly Workshop</p>
+                    <span>December 28, 2024</span>
                 </div>
             </div>
 
-            <!-- Member Card 3 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024003</div>
+            <div class="members-card">
+                <div class="members-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=800&fit=crop" alt="Event">
+                    <div class="members-overlay">
+                        <span>Event ID: EV2024003</span>
                     </div>
                 </div>
-                <div class="member-info">
-                    <h3 class="member-name">Regional Authors Meet</h3>
-                    <p class="member-designation">Networking Event</p>
-                    <p class="member-year">Held: November 20, 2024</p>
+                <div class="members-info">
+                    <h3>Regional Authors Meet</h3>
+                    <p>Networking Event</p>
+                    <span>November 20, 2024</span>
                 </div>
             </div>
 
-            <!-- Member Card 4 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024004</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Book Launch Festival</h3>
-                    <p class="member-designation">Cultural Celebration</p>
-                    <p class="member-year">Scheduled: February 10, 2025</p>
-                </div>
-            </div>
-
-            <!-- Member Card 5 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024005</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Youth Literature Conference</h3>
-                    <p class="member-designation">Educational Conference</p>
-                    <p class="member-year">Scheduled: March 5-7, 2025</p>
-                </div>
-            </div>
-
-            <!-- Member Card 6 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024006</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Classical Music & Literature Night</h3>
-                    <p class="member-designation">Cultural Program</p>
-                    <p class="member-year">Held: October 12, 2024</p>
-                </div>
-            </div>
-
-            <!-- Member Card 7 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024007</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Heritage Documentation Project</h3>
-                    <p class="member-designation">Community Initiative</p>
-                    <p class="member-year">Ongoing Since: January 2024</p>
-                </div>
-            </div>
-
-            <!-- Member Card 8 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024008</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">International Book Fair Participation</h3>
-                    <p class="member-designation">Exhibition & Display</p>
-                    <p class="member-year">Scheduled: April 18-21, 2025</p>
-                </div>
-            </div>
-
-            <!-- Member Card 9 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024009</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Writers' Retreat Weekend</h3>
-                    <p class="member-designation">Residential Program</p>
-                    <p class="member-year">Scheduled: May 15-17, 2025</p>
-                </div>
-            </div>
-
-            <!-- Member Card 10 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024010</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Digital Literature Symposium</h3>
-                    <p class="member-designation">Technology & Literature</p>
-                    <p class="member-year">Scheduled: June 8, 2025</p>
-                </div>
-            </div>
-
-            <!-- Member Card 11 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024011</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Children's Storytelling Festival</h3>
-                    <p class="member-designation">Kids Special Event</p>
-                    <p class="member-year">Held: September 15, 2024</p>
-                </div>
-            </div>
-
-            <!-- Member Card 12 -->
-            <div class="member-card">
-                <div class="member-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=800&fit=crop" alt="Event" class="member-image">
-                    <div class="member-overlay">
-                        <div class="member-id">Event ID: EV2024012</div>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Annual General Meeting 2025</h3>
-                    <p class="member-designation">Administrative Meeting</p>
-                    <p class="member-year">Scheduled: July 20, 2025</p>
-                </div>
-            </div>
+            <!-- 👉 Repeat the SAME .members-card structure for all other events -->
 
         </div>
     </div>
 </section>
-</div>
-    </div>
 
 <section class="partner-marquee">
     <div class="marquee-track">
