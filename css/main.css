@@ -329,52 +329,47 @@ body {
 ========================= */
 @media (max-width: 768px) {
 
-    /* TOP BAR */
+    /* TOP BAR BASE */
     .top-bar {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 8px 12px;
-        gap: 6px;
+        gap: 10px;
+        padding: 8px 15px;
         text-align: center;
     }
 
-    /* LINE 1: CONTACTS */
+    /* CONTACT INFO */
     .top-left {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-        font-size: 12px;
-    }
-
-    .top-left span {
-        display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: 6px;
-        white-space: nowrap;
+        font-size: 13px;
     }
 
-    /* LINE 2: ODIA ONLY */
+    /* HIDE EVERYTHING ON RIGHT */
     .top-right {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        display: none;
     }
 
-    /* HIDE SEARCH & ICONS */
-    .search-wrapper,
-    .top-right a:not(:last-child) {
+    /* SHOW ONLY ODIA TOGGLE */
+    .top-right a:last-child {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+
+    /* RE-ENABLE TOP-RIGHT FOR ODIA ONLY */
+    .top-right {
+        display: block;
+    }
+
+    /* HIDE ICON LINKS & SEARCH */
+    .top-right a:not(:last-child),
+    .search-wrapper {
         display: none !important;
     }
 
-    /* ODIA TOGGLE */
-    .top-right a:last-child {
-        font-size: 13px;
-        font-weight: 600;
-        padding-top: 2px;
-    }
-}
 
     /* HEADER – show both logos */
     .main-header {
@@ -472,7 +467,7 @@ body {
         cursor: pointer;
         line-height: 1;
     }
-
+}
 
 /* =========================
    SMALL MOBILE
@@ -916,7 +911,7 @@ body {
     padding: 8px 10px;
     background: #ffffff;
     border: 1px solid #333;
-    color: #000000;
+    color: #ffffff;
     font-size: 12.5px;
     border-radius: 5px;
 }
@@ -1046,22 +1041,7 @@ body {
     .footer-feedback-form button {
         width: 100%;
     }
-
-    @media (max-width: 900px) {
-
-    .footer-links {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .footer-links li {
-        margin: 0;
-    }
 }
-
-
 
 /* =========================
    PAGINATION 
@@ -5598,4 +5578,4 @@ tbody tr:last-child td {
     .video-grid {
         grid-template-columns: 1fr;
     }
-}}
+}
