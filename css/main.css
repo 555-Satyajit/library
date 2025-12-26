@@ -149,8 +149,26 @@ body {
     top: 0;
     z-index: 1000;
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
+
+.sticky-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    pointer-events: none;
+}
+@media (max-width: 768px) {
+    .sticky-header {
+        will-change: transform;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+}
+
 
 .header-wrapper {
     position: relative;
@@ -375,11 +393,11 @@ body {
 
 @media (max-width: 768px) {
 
-    /* TOP BAR BASE */
+     /* TOP BAR */
     .top-bar {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         padding: 8px 15px;
         text-align: center;
     }
@@ -387,47 +405,49 @@ body {
     /* CONTACT INFO */
     .top-left {
         display: flex;
-        flex-direction: column;
-        gap: 6px;
+        flex-direction: row;          /* side by side */
+        gap: 14px;
         font-size: 13px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    /* HIDE EVERYTHING ON RIGHT */
-    .top-right {
+    /* HIDE PHONE NUMBER (first span) */
+    .top-left span:first-child {
         display: none;
     }
 
-    /* SHOW ONLY ODIA TOGGLE */
-    .top-right a:last-child {
-        display: inline-block;
-        font-weight: 600;
-        font-size: 14px;
+    /* EMAIL ALIGNMENT */
+    .top-left span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+    }
+
+    /* TOP RIGHT — ONLY ODIA */
+    .top-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         margin-top: 4px;
     }
 
-    /* RE-ENABLE TOP-RIGHT FOR ODIA ONLY */
-    .top-right {
-        display: block;
-    }
-
-    /* HIDE ICON LINKS & SEARCH */
+    /* HIDE ICONS & SEARCH */
     .top-right a:not(:last-child),
     .search-wrapper {
         display: none !important;
     }
 
+    /* ODIA TOGGLE */
+    .top-right a:last-child {
+        font-weight: 600;
+        font-size: 14px;
+        display: inline-block;
+    }
 
     /* HEADER – show both logos */
-    .main-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:flex-start;
-        padding: 10px 15px;
-        gap: 10px;
-        padding-right: 15px;
-        height: auto;
-    }
+  
 
     .logo-section img {
         height: 40px;
@@ -651,7 +671,7 @@ body {
         justify-content: space-between;
     }
     
-    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .bi bi-chevron-right {
+    .navbar ul li.has-dropdown .dropdown-menu li.has-submenu .bi .bi-chevron-right {
         font-size: 8px;
         margin-left: 10px;
     }
@@ -1194,9 +1214,7 @@ width: 60%;
         width: 100%;
     }
 }
-.footer-logos img[alt="Government of Odisha"]{
-    height: 40px;
-}
+
 
 @media (max-width: 900px) {
 
