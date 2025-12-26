@@ -171,10 +171,53 @@ body {
 }
 
 .logo-section img {
-    height: 80px;
-    width: 350px;
+    height: 90px;
+    width: 89px;
     object-fit: contain;
 }
+
+.govt-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0 6px;
+}
+
+/* Seal */
+.govt-seal {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Text block */
+.govt-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.25;
+    margin-top: 2px;
+}
+
+/* Main heading */
+.govt-title {
+    font-family: "Lato", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0b2c8a;
+    letter-spacing: 0.3px;
+}
+
+/* Subtitle */
+.govt-subtitle {
+    margin-top: 4px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
+
+
 
 /* PERSON / CM SECTION – optional */
 .person-section {
@@ -327,6 +370,9 @@ body {
 /* =========================
    MOBILE
 ========================= */
+
+
+
 @media (max-width: 768px) {
 
     /* TOP BAR BASE */
@@ -376,9 +422,9 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content:flex-start;
         padding: 10px 15px;
-        gap: 8px;
+        gap: 10px;
         padding-right: 15px;
         height: auto;
     }
@@ -387,6 +433,40 @@ body {
         height: 40px;
         width: auto;
         max-width: 180px;
+    }
+
+    /* Left govt block */
+    .govt-logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        flex: 1;              /* TAKE remaining space */
+        overflow: hidden;
+    }
+
+    .govt-seal {
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .govt-text {
+        line-height: 1.15;
+        overflow: hidden;
+    }
+
+    .govt-title {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .govt-subtitle {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .secondary-logo {
@@ -474,7 +554,7 @@ body {
 ========================= */
 @media (max-width: 480px) {
     .logo-section img {
-        width: 160px;
+    
         height: 40px;
     }
 
@@ -735,6 +815,68 @@ body {
         transform: rotate(90deg);
     }
 }
+/* =====================================
+   GUARANTEED MOBILE FIX — LOGOS ONLY
+===================================== */
+@media (max-width: 768px) {
+
+    /* Neutralize desktop assumptions */
+    .main-header {
+        padding-right: 15px !important;
+        height: auto !important;
+        position: relative; /* anchor */
+    }
+
+    /* LEFT LOGO BLOCK */
+    .logo-section {
+        padding-right: 60px; /* reserve space for right logo */
+        overflow: hidden;
+    }
+
+    .govt-logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+    }
+
+    .govt-seal {
+        height: 40px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .govt-text {
+        line-height: 1.15;
+        overflow: hidden;
+    }
+
+    .govt-title {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .govt-subtitle {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* RIGHT LOGO — REMOVE FROM FLOW */
+    .secondary-logo {
+        display: block !important;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40px;
+        width: auto;
+        margin: 0 !important;
+    }
+}
 
 
 /* ===============================
@@ -870,10 +1012,16 @@ body {
 ========================= */
 
 .footer-logos img {
-    max-width: 110px;
+   
     margin-bottom: 10px;
     display: block;
 }
+
+.footer-logos img[alt="Government of Odisha"] {
+  
+width: 60%;
+   
+}       
 
 /* =========================
    MAIN MENU — TRUE 5 / 4 TOP SPLIT
@@ -1045,6 +1193,9 @@ body {
     .footer-feedback-form button {
         width: 100%;
     }
+}
+.footer-logos img[alt="Government of Odisha"]{
+    height: 40px;
 }
 
 @media (max-width: 900px) {
@@ -5778,4 +5929,11 @@ tbody tr:last-child td {
     .libsx-grid {
         grid-template-columns: 1fr;
     }
+}
+/* PAGINATION */
+.magazine-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
 }
