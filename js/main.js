@@ -19,64 +19,44 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ===============================
-   HERO FLIPBOOK (jQuery / turn.js)
+   HERO FLIPBOOK (HTML-driven)
 ================================ */
+
 function initHeroFlipbook() {
 
-    // GUARD (VERY IMPORTANT)
+    // GUARD
     if (typeof $ === "undefined" || !$("#flipbook").length) return;
 
-    // Hero text content for each page
-    const heroContent = [
-        {
-            title: "Welcome to Harekrushna Mahatab Library",
-            description: "Discover thousands of books, digital resources, and knowledge that inspire minds and transform lives. Your journey to learning starts here.",
-            cta: "Explore Collection"
-        },
-        {
-            title: "Digital Library Services",
-            description: "Access our extensive digital collection from anywhere. E-books, journals, and multimedia resources available 24/7 for all members.",
-            cta: "Get Started"
-        },
-        {
-            title: "Community Learning Hub",
-            description: "Join workshops, reading clubs, and events. Connect with fellow readers and expand your horizons in our vibrant community space.",
-            cta: "View Events"
-        },
-        {
-            title: "Research & Resources",
-            description: "Access comprehensive research materials, academic journals, and expert guidance for your scholarly pursuits and professional development.",
-            cta: "Start Research"
-        }
-    ];
-
-    // Update hero text with smooth slide animation
+    /* ===============================
+       HERO TEXT UPDATE
+    ================================ */
     function updateHeroText(pageIndex) {
-        const content = heroContent[pageIndex - 1];
-        if (!content) return;
+        const page = $("#flipbook .page").eq(pageIndex - 1);
+        if (!page.length) return;
 
         const heroSection = $('#heroText');
         heroSection.addClass('changing');
 
         setTimeout(() => {
-            $('#heroTitle').text(content.title);
-            $('#heroDescription').text(content.description);
-            $('#heroCta').text(content.cta);
+            $('#heroTitle').text(page.data('title'));
+            $('#heroDescription').text(page.data('description'));
+            $('#heroCta').text(page.data('cta'));
             heroSection.removeClass('changing');
         }, 400);
     }
 
-    // Initialize turn.js
+    /* ===============================
+       INIT FLIPBOOK
+    ================================ */
     $("#flipbook").turn({
         width: 800,
         height: 500,
-        autoCenter: false,
         display: 'single',
         acceleration: true,
         elevation: 50,
         gradients: true,
         duration: 1200,
-        pages: 4,
+        pages: $("#flipbook .page").length,
         when: {
             turning: function (event, page) {
                 updateButtons(page);
@@ -85,44 +65,93 @@ function initHeroFlipbook() {
         }
     });
 
-    // Update button states
+    /* ===============================
+       BUTTON STATE
+    ================================ */
     function updateButtons(page) {
         const totalPages = $("#flipbook").turn("pages");
-
         $('#prevBtn').prop('disabled', page === 1);
         $('#nextBtn').prop('disabled', page === totalPages);
     }
 
-    // Control buttons
-    $('#prevBtn').on('click', () => $("#flipbook").turn("previous"));
-    $('#nextBtn').on('click', () => $("#flipbook").turn("next"));
+    /* ===============================
+       AUTOPLAY CORE
+    ================================ */
+    let autoPlay = null;
+    let resumeTimeout = null;
 
-    // Keyboard navigation
-    $(window).on('keydown', function (e) {
-        if (e.keyCode === 37) $("#flipbook").turn("previous");
-        if (e.keyCode === 39) $("#flipbook").turn("next");
+    function startAutoplay(delay = 3000) {
+        stopAutoplay();
+        autoPlay = setInterval(() => {
+            const current = $("#flipbook").turn("page");
+            const total = $("#flipbook").turn("pages");
+
+            if (current < total) {
+                $("#flipbook").turn("next");
+            } else {
+                setTimeout(() => {
+                    $("#flipbook").turn("page", 1);
+                }, 200);
+            }
+        }, delay);
+    }
+
+    function stopAutoplay() {
+        if (autoPlay) {
+            clearInterval(autoPlay);
+            autoPlay = null;
+        }
+    }
+
+    function resumeAutoplay(delay = 2000) {
+        clearTimeout(resumeTimeout);
+        resumeTimeout = setTimeout(() => {
+            startAutoplay(4000);
+        }, delay);
+    }
+
+    /* ===============================
+       CONTROLS
+    ================================ */
+    $('#prevBtn').on('click', function () {
+        stopAutoplay();
+        $("#flipbook").turn("previous");
+        resumeAutoplay();
     });
 
-    // Auto-play
-    let autoPlay = setInterval(() => {
-        const current = $("#flipbook").turn("page");
-        const total = $("#flipbook").turn("pages");
-        $("#flipbook").turn(current < total ? "next" : "page", 1);
-    }, 3000);
+    $('#nextBtn').on('click', function () {
+        stopAutoplay();
+        $("#flipbook").turn("next");
+        resumeAutoplay();
+    });
 
-    // Pause autoplay on hover
-    $('.hero-section').hover(
-        () => clearInterval(autoPlay),
-        () => {
-            autoPlay = setInterval(() => {
-                const current = $("#flipbook").turn("page");
-                const total = $("#flipbook").turn("pages");
-                $("#flipbook").turn(current < total ? "next" : "page", 1);
-            }, 5000);
+    $(window).on('keydown', function (e) {
+        if (e.keyCode === 37) {
+            stopAutoplay();
+            $("#flipbook").turn("previous");
+            resumeAutoplay();
         }
+        if (e.keyCode === 39) {
+            stopAutoplay();
+            $("#flipbook").turn("next");
+            resumeAutoplay();
+        }
+    });
+
+    /* ===============================
+       HOVER CONTROL
+    ================================ */
+    $('.hero-section').hover(
+        () => {
+            stopAutoplay();
+            clearTimeout(resumeTimeout);
+        },
+        () => startAutoplay(2000)
     );
 
-    // Responsive resize
+    /* ===============================
+       RESPONSIVE RESIZE
+    ================================ */
     function resizeBook() {
         const w = $(window).width();
         let bw = 400, bh = 260;
@@ -139,9 +168,14 @@ function initHeroFlipbook() {
     $(window).on('resize', resizeBook);
     resizeBook();
 
-    // Initial state
+    /* ===============================
+       INITIAL STATE
+    ================================ */
     updateButtons(1);
+    updateHeroText(1);
+    startAutoplay(3000);
 }
+
 
 
 /* ===============================

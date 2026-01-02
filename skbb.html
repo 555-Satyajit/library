@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,516 +10,667 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-    <div class="top-left">
-        <span><img src="public\images\phone.png" alt="phone"> +91 674 2514315</span>
-        <span><img src="public\images\mail.png" alt="mail"> hkmsl@rediffmail.com</span>
-    </div>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-left">
+            <span><img src="public\images\phone.png" alt="phone"> +91 674 2514315</span>
+            <span><img src="public\images\mail.png" alt="mail"> hkmsl@rediffmail.com</span>
+        </div>
 
-    <div class="top-right">
-       <!-- SEARCH WRAPPER -->
-    <div class="search-wrapper">
-        <input type="text" placeholder="Search..." />
-        <button class="search-close">✕</button>
-    </div>
-
-    <a href="#" class="search-toggle">
-        <img src="public/images/search.png" alt="search">
-    </a>
-        <a href="#"><img src="public\images\ico-skip.png" alt="ico-skip"></a>
-        <a href="#"><img src="public\images\ico-accessibility.png" alt="ico-accessibility"></a>
-        <a href="#"><img src="public\images\ico-sitemap.png" alt="ico-sitemap"></a>
-        <a href="#">ଓଡ଼ିଆ</a>
-    </div>
-</div>
-
-<!-- HEADER + NAV WRAPPER -->
-<!-- STICKY CONTAINER -->
-<div class="sticky-header">
-
-    <div class="header-wrapper">
-
-        <!-- MAIN HEADER -->
-        <div class="main-header">
-            <div class="logo-section">
-                <img src="public/images/logo2.png" alt="Library Logo">
+        <div class="top-right">
+            <!-- SEARCH WRAPPER -->
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search..." />
+                <button class="search-close">✕</button>
             </div>
 
-            <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
+            <a href="#" class="search-toggle">
+                <img src="public/images/search.png" alt="search">
+            </a>
+            <a href="#"><img src="public\images\ico-skip.png" alt="ico-skip"></a>
+            <a href="#"><img src="public\images\ico-accessibility.png" alt="ico-accessibility"></a>
+            <a href="#"><img src="public\images\ico-sitemap.png" alt="ico-sitemap"></a>
+            <a href="#">ଓଡ଼ିଆ</a>
+        </div>
+    </div>
+
+    <!-- HEADER + NAV WRAPPER -->
+    <!-- STICKY CONTAINER -->
+    <div class="sticky-header">
+
+        <div class="header-wrapper">
+
+            <!-- MAIN HEADER -->
+            <div class="main-header">
+                <div class="logo-section">
+                    <img src="public/images/logo2.png" alt="Library Logo">
+                </div>
+
+                <img class="secondary-logo" src="public/images/logo.jpg" alt="Second Logo">
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <button class="hamburger" id="hamburgerBtn">☰</button>
+
+                <ul id="navMenu">
+                    <li><a href="index.html"><img src="public/images/home.png" alt="home"></a></li>
+
+                    <!-- ABOUT US DROPDOWN -->
+                    <li class="has-dropdown">
+                        <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ataglance.html">At a glance</a></li>
+                            <li><a href="facilites.html">Facilities</a></li>
+                            <li><a href="location.html">Location and Map</a></li>
+                            <li><a href="librarypersonnel.html">Library Personnel</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Act & Rules <span class="bi bi-chevron-right"></span></a>
+                                <ul class="submenu">
+                                    <li><a href="libraryrules.html">Library Rules</a></li>
+                                    <li><a href="membershiprule.html">Membership Rules</a></li>
+                                    <li><a href="act.html">ACTS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="division.html">Division</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- LIBRARY SERVICE DROPDOWN -->
+                    <li class="has-dropdown">
+                        <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="has-submenu">
+                                <a href="#">Membership <span class="bi bi-chevron-right"></span></a>
+                                <ul class="submenu">
+                                    <li><a href="lifetimemembership.html">Lifetime Membership</a></li>
+                                    <li><a href="statememmbership.html">State Membership</a></li>
+                                    <li><a href="bplmembership.html">BPL Membership</a></li>
+                                    <li><a href="childrenmembership.html">Children Membership</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="lifetimememmbers.html">Life time members</a></li>
+
+                            <li class="has-submenu">
+                            <li><a href="readerservice.html">Readers Services</a></li>
+                            <li><a href="magazine.html">Magazines</a></li>
+                            <li><a href="newspaper.html">Newspapers</a></li>
+                            <!-- <li><a href="literature.html">Language and Literature</a></li> -->
+                    </li>
+                </ul>
+                </li>
+
+                <!-- publications -->
+
+                <li><a href="publication.html">PUBLICATIONS</a></li>
+
+                <!-- -->
+                <!-- -->
+                <li><a href="https://eg4.nic.in/">CATALOUGES</a></li>
+
+                <!-- GALLERY DROPDOWN -->
+                <li class="has-dropdown">
+                    <a href="#" class="dropdown-toggle">GALLERY <span class="arrow"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="photogallary.html">Photo Gallery</a></li>
+                        <li><a href="videogallery.html">Video Gallery</a></li>
+                        <li><a href="eventsgallery.html">Events Gallery</a></li>
+                        <!-- Success Stories DROPDOWN -->
+                        <li class="has-submenu">
+                            <a href="#">Success Stories <span class="bi bi-chevron-right"></span></a>
+                            <ul class="submenu">
+                                <li><a href="imagestory.html">Image Success Stories</a></li>
+                                <li><a href="videostory.html">Video Success Stories</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+
+                <!-- NOTIFICATION DROPDOWN -->
+                <li class="has-dropdown">
+                    <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tender.html">Tender</a></li>
+                        <li><a href="notice.html">Notice</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">RTI</a></li>
+                <li><a href="skbb.html">SKBB</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+                <!-- close button INSIDE mobile menu -->
+                <li class="nav-close-item">
+                    <button id="navCloseBtn" class="nav-close-btn">✕</button>
+                </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+
+
+    <!-- ========= BANNER ========= -->
+    <div class="atglance-banner">
+        <div class="atglance-banner-overlay">
+
+            <!-- Title (stays centered vertically) -->
+            <div class="atglance-banner-content">
+                <h1>SKBB</h1>
+            </div>
+
+            <!-- Back button (moves independently) -->
+            <a href="index.html" class="back-home back-fixed">
+                ← Back to home
+            </a>
+
+        </div>
+    </div>
+
+
+    <section class="skbb-section">
+        <div class="skbb-container">
+
+            <!-- HEADER -->
+            <div class="skbb-header">
+                <span class="skbb-eyebrow">Library Profile</span>
+                <h2 class="skbb-title">Santhakabi Bhima Bhoi Library (SKBB)</h2>
+                <p class="skbb-intro">
+                    Santhakabi Bhima Bhoi Library is an integral part of the Odisha State Library
+                    system, serving as a knowledge and cultural resource center with a focus on
+                    literature, research, and public access to information.
+                </p>
+            </div>
+
+            <!-- ABOUT (BOOK STYLE) -->
+            <div class="skbb-book">
+                <div class="skbb-book-text">
+                    <h3>About the Library</h3>
+                    <p>
+                        The Santhakabi Bhima Bhoi Library functions as a specialized library
+                        dedicated to preserving literary heritage while supporting modern
+                        learning and research needs. The library houses a wide range of books,
+                        periodicals, newspapers, and reference materials.
+                    </p>
+                    <p>
+                        The library is committed to providing equitable access to knowledge,
+                        promoting reading habits, and supporting academic and cultural activities.
+                    </p>
+                </div>
+
+                <div class="skbb-book-image">
+                    <img src="public/images/bhiamabhoi.jpg" alt="Santhakabi Bhima Bhoi Library Building">
+                    <span class="image-caption">Santhakabi Bhima Bhoi Library – Reading Hall</span>
+                </div>
+            </div>
+
+            <!-- DETAILS GRID -->
+            <div class="skbb-info-grid">
+
+                <div class="skbb-info-block">
+                    <h4>Library Timings</h4>
+                    <p>
+                        Monday to Friday: 10:00 AM – 6:00 PM<br>
+                        Saturday: 10:00 AM – 5:00 PM<br>
+                        Sunday & Government Holidays: Closed
+                    </p>
+                </div>
+
+                <div class="skbb-info-block">
+                    <h4>Library Rules</h4>
+                    <p>
+                        Silence must be maintained inside the library premises.
+                        Borrowing privileges are subject to membership rules.
+                        Library materials must be handled with care.
+                    </p>
+                </div>
+
+                <div class="skbb-info-block">
+                    <h4>Membership</h4>
+                    <p>
+                        Membership is open to students, researchers, and the general public
+                        as per prescribed norms and submission of valid identification.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="language-toggle" style="text-align:right; margin-bottom:15px;">
+                <button onclick="setLanguage('en')">English</button>
+                <button onclick="setLanguage('od')">Odia</button>
+            </div>
+
+            <!-- MAGAZINES -->
+            <div class="skbb-table-section">
+                <h3 class="skbb-section-title">Magazines</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl. No.</th>
+                                <th>Magazine Name</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+
+                        <tbody data-table="magazines">
+                            <!-- English -->
+                            <tr data-lang="en">
+                                <td>1</td>
+                                <td>Banking Services Chronicle</td>
+                                <td>Current Affairs</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>2</td>
+                                <td>Competition Success Review</td>
+                                <td>Competitive Exams</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>3</td>
+                                <td>General Knowledge Today</td>
+                                <td>General Knowledge</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>4</td>
+                                <td>India Today</td>
+                                <td>Current Affairs</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>5</td>
+                                <td>Kurukshetra</td>
+                                <td>Government Magazine</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>6</td>
+                                <td>Master In Current Affairs</td>
+                                <td>Current Affairs</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>7</td>
+                                <td>Pratiyogita Darpan</td>
+                                <td>Competitive Exams</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>8</td>
+                                <td>Speedy Current Affairs Yearly</td>
+                                <td>Yearly Review</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>9</td>
+                                <td>Employment News</td>
+                                <td>Employment</td>
+                            </tr>
+
+                            <!-- Odia -->
+                            <tr data-lang="od">
+                                <td>1</td>
+                                <td>Nijukti Khabara</td>
+                                <td>ନିଯୁକ୍ତି</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- NEWSPAPERS -->
+            <div class="skbb-table-section">
+                <h3 class="skbb-section-title">Newspapers</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl. No.</th>
+                                <th>Newspaper Name</th>
+                            </tr>
+                        </thead>
+
+                        <tbody data-table="newspapers">
+                            <!-- English -->
+                            <tr data-lang="en">
+                                <td>1</td>
+                                <td>The Hindu</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>2</td>
+                                <td>The Business Standard</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>3</td>
+                                <td>The Times of India</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>4</td>
+                                <td>The Economic Times</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>5</td>
+                                <td>The Telegraph</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>6</td>
+                                <td>The New Indian Express</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>7</td>
+                                <td>The Statesman</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>8</td>
+                                <td>The Mint</td>
+                            </tr>
+
+                            <!-- Odia -->
+                            <tr data-lang="od">
+                                <td>1</td>
+                                <td>Samaj</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>2</td>
+                                <td>Samaya</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>3</td>
+                                <td>Prameya</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>4</td>
+                                <td>Dharitri</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>5</td>
+                                <td>Sambad</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>6</td>
+                                <td>Pragativadi</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>7</td>
+                                <td>Prajatantra</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>8</td>
+                                <td>Bhaskara</td>
+                            </tr>
+                            <tr data-lang="od">
+                                <td>9</td>
+                                <td>Sakala</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- LATEST BOOKS -->
+            <div class="skbb-table-section">
+                <h3 class="skbb-section-title">Latest Books</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl. No.</th>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+
+                        <tbody data-table="books">
+                            <!-- English -->
+                            <tr data-lang="en">
+                                <td>1</td>
+                                <td>Indian Polity</td>
+                                <td>M. Laxmikanth</td>
+                                <td>2023</td>
+                            </tr>
+                            <tr data-lang="en">
+                                <td>2</td>
+                                <td>Indian Economy</td>
+                                <td>Ramesh Singh</td>
+                                <td>2024</td>
+                            </tr>
+
+                            <!-- Odia -->
+                            <tr data-lang="od">
+                                <td>1</td>
+                                <td>Modern Odisha Literature</td>
+                                <td>—</td>
+                                <td>2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner-marquee">
+        <div class="marquee-track">
+
+            <!-- CARD -->
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/odisha-govt.png" alt="Govt of Odisha">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/library.png" alt="State Library">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/abstract-logo.png" alt="Partner">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+            <!-- DUPLICATE FOR SEAMLESS LOOP -->
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/odisha-govt.png" alt="Govt of Odisha">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/library.png" alt="State Library">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/abstract-logo.png" alt="Partner">
+            </div>
+
+            <div class="partner-card">
+                <img src="images/ocac.png" alt="OCAC">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="site-footer">
+
+        <!-- =========================
+         FOOTER MAIN CONTENT
+    ========================= -->
+        <div class="footer-main">
+
+            <!-- COLUMN 1 : LOGOS -->
+            <div class="footer-col footer-logos">
+                <img src="public/images/govt-odisha.png" alt="Government of Odisha">
+                <img src="public/images/library-logo.png" alt="Odisha State Library">
+            </div>
+
+            <!-- COLUMN 2 : MAIN NAVIGATION -->
+            <div class="footer-col main-menu">
+                <h4>Main Menu</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Library Service</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Catalogues</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Notification</a></li>
+                    <li><a href="#">RTI</a></li>
+                    <li><a href="#">SKBB</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- COLUMN 3 : RESOURCES -->
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Recruitment / Rules / Vacancy</a></li>
+                    <li><a href="#">Orders / Circulars</a></li>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Digitized Books</a></li>
+                    <li><a href="#">Rare Books</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 4 : FEEDBACK -->
+            <div class="footer-col footer-feedback">
+                <h4>Feedback</h4>
+
+                <form class="footer-feedback-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea rows="3" placeholder="Your Feedback"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
         </div>
 
-       <!-- NAVBAR -->
-        <nav class="navbar">
-    <button class="hamburger" id="hamburgerBtn">☰</button>
+        <!-- =========================
+         DIVIDER
+    ========================= -->
+        <!-- <div class="footer-divider"></div> -->
 
-    <ul id="navMenu">
-        <li><a href="index.html"><img src="public/images/home.png" alt="home"></a></li>
-        
-        <!-- ABOUT US DROPDOWN -->
-        <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="ataglance.html">At a glance</a></li>
-                <li><a href="facilites.html">Facilities</a></li>
-                <li><a href="location.html">Location and Map</a></li>
-                <li><a href="librarypersonnel.html">Library Personnel</a></li>
-                <li class="has-submenu">
-                    <a href="#">Act & Rules <span class="bi bi-chevron-right"></span></a>
-                    <ul class="submenu">
-                        <li><a href="libraryrules.html">Library Rules</a></li>
-                        <li><a href="membershiprule.html">Membership Rules</a></li>
-                        <li><a href="act.html">ACTS</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="division.html">Division</a></li>
+        <!-- =========================
+         EXISTING TOP LINKS (UNCHANGED)
+    ========================= -->
+        <div class="footer-top">
+            <ul class="footer-links">
+                <li><a href="#">Website Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
             </ul>
-        </li>
-        
-        <!-- LIBRARY SERVICE DROPDOWN -->
-        <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">LIBRARY SERVICE <span class="arrow"></span></a>
-            <ul class="dropdown-menu">
-                <li class="has-submenu">
-                    <a href="#">Membership <span class="bi bi-chevron-right"></span></a>
-                    <ul class="submenu">
-                        <li><a href="lifetimemembership.html">Lifetime Membership</a></li>
-                        <li><a href="statememmbership.html">State Membership</a></li>
-                        <li><a href="bplmembership.html">BPL Membership</a></li>
-                        <li><a href="childrenmembership.html">Children Membership</a></li>
-                    </ul>
-                </li>
-                <li><a href="lifetimememmbers.html">Life time members</a></li>
-
-                <li class="has-submenu">
-                     <li><a href="readerservice.html">Readers Services</a></li>
-                    <li><a href="magazine.html">Magazines</a></li>
-                    <li><a href="newspaper.html">Newspapers</a></li>
-                    <!-- <li><a href="literature.html">Language and Literature</a></li> -->
-                </li>
-            </ul>
-        </li>
-
-        <!-- publications -->
-    
-        <li><a href="publication.html">PUBLICATIONS</a></li>
-        
-        <!-- -->
-        <!-- -->
-        <li><a href="https://eg4.nic.in/">CATALOUGES</a></li>
-        
-        <!-- GALLERY DROPDOWN -->
-        <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">GALLERY <span class="arrow"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="photogallary.html">Photo Gallery</a></li>
-                <li><a href="videogallery.html">Video Gallery</a></li>
-                <li><a href="eventsgallery.html">Events Gallery</a></li>
-                <!-- Success Stories DROPDOWN -->
-                <li class="has-submenu">
-                    <a href="#">Success Stories <span class="bi bi-chevron-right"></span></a>
-                    <ul class="submenu">
-                        <li><a href="imagestory.html">Image Success Stories</a></li>
-                        <li><a href="videostory.html">Video Success Stories</a></li>
-                    </ul>
-                </li>
-                
-
-            </ul>
-        </li>
-        
-
-         <!-- NOTIFICATION DROPDOWN -->
-        <li class="has-dropdown">
-            <a href="#" class="dropdown-toggle">NOTIFICATION <span class="arrow"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="tender.html">Tender</a></li>
-                <li><a href="notice.html">Notice</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </li>
-        
-        <li><a href="#">RTI</a></li>
-        <li><a href="skbb.html">SKBB</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-
-        <!-- close button INSIDE mobile menu -->
-        <li class="nav-close-item">
-            <button id="navCloseBtn" class="nav-close-btn">✕</button>
-        </li>
-    </ul>
-</nav>
-
-    </div>
-</div>
-
-
-
-            <!-- ========= BANNER ========= -->
-  <div class="atglance-banner">
-    <div class="atglance-banner-overlay">
-
-        <!-- Title (stays centered vertically) -->
-        <div class="atglance-banner-content">
-            <h1>SKBB</h1>
         </div>
 
-        <!-- Back button (moves independently) -->
-        <a href="index.html" class="back-home back-fixed">
-            ← Back to home
-        </a>
+        <!-- =========================
+         DIVIDER
+    ========================= -->
+        <!-- <div class="footer-divider"></div> -->
 
-    </div>
-</div>
-
-
-<section class="skbb-section">
-    <div class="skbb-container">
-
-        <!-- HEADER -->
-        <div class="skbb-header">
-            <span class="skbb-eyebrow">Library Profile</span>
-            <h2 class="skbb-title">Santhakabi Bhima Bhoi Library (SKBB)</h2>
-            <p class="skbb-intro">
-                Santhakabi Bhima Bhoi Library is an integral part of the Odisha State Library
-                system, serving as a knowledge and cultural resource center with a focus on
-                literature, research, and public access to information.
+        <!-- =========================
+         EXISTING LICENSE TEXT (UNCHANGED)
+    ========================= -->
+        <div class="footer-middle">
+            <p>
+                The content of this website is licensed under
+                <a href="#" target="_blank">
+                    Creative Commons Attribution 4.0 International License
+                </a>.
             </p>
         </div>
 
-        <!-- ABOUT (BOOK STYLE) -->
-        <div class="skbb-book">
-            <div class="skbb-book-text">
-                <h3>About the Library</h3>
-                <p>
-                    The Santhakabi Bhima Bhoi Library functions as a specialized library
-                    dedicated to preserving literary heritage while supporting modern
-                    learning and research needs. The library houses a wide range of books,
-                    periodicals, newspapers, and reference materials.
-                </p>
-                <p>
-                    The library is committed to providing equitable access to knowledge,
-                    promoting reading habits, and supporting academic and cultural activities.
-                </p>
-            </div>
-
-            <div class="skbb-book-image">
-                <img src="public/images/bhiamabhoi.jpg" alt="Santhakabi Bhima Bhoi Library Building">
-                <span class="image-caption">Santhakabi Bhima Bhoi Library – Reading Hall</span>
-            </div>
-        </div>
-
-        <!-- DETAILS GRID -->
-        <div class="skbb-info-grid">
-
-            <div class="skbb-info-block">
-                <h4>Library Timings</h4>
-                <p>
-                    Monday to Friday: 10:00 AM – 6:00 PM<br>
-                    Saturday: 10:00 AM – 5:00 PM<br>
-                    Sunday & Government Holidays: Closed
-                </p>
-            </div>
-
-            <div class="skbb-info-block">
-                <h4>Library Rules</h4>
-                <p>
-                    Silence must be maintained inside the library premises.
-                    Borrowing privileges are subject to membership rules.
-                    Library materials must be handled with care.
-                </p>
-            </div>
-
-            <div class="skbb-info-block">
-                <h4>Membership</h4>
-                <p>
-                    Membership is open to students, researchers, and the general public
-                    as per prescribed norms and submission of valid identification.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- MAGAZINES -->
-        <div class="skbb-table-section">
-            <h3 class="skbb-section-title">Magazines</h3>
-
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sl. No.</th>
-                            <th>Magazine Name</th>
-                            <th>Category</th>
-                            <th>Language</th>
-                            <th>Available</th>
-                            <th>Not Available</th>
-                            <th>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Romantic</td>
-                            <td>HarperCollins India</td>
-                            <td>English</td>
-                            <td>✓</td>
-                            <td>-</td>
-                            <td>👁</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Civil</td>
-                            <td>Indian Constitution</td>
-                            <td>English</td>
-                            <td>-</td>
-                            <td>✕</td>
-                            <td>👁</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- NEWSPAPERS -->
-        <div class="skbb-table-section">
-            <h3 class="skbb-section-title">Newspapers</h3>
-
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sl. No.</th>
-                            <th>Newspaper Name</th>
-                            <th>Language</th>
-                            <th>Available</th>
-                            <th>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>The Hindu</td>
-                            <td>English</td>
-                            <td>✓</td>
-                            <td>👁</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sambad</td>
-                            <td>Odia</td>
-                            <td>✓</td>
-                            <td>👁</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- LATEST BOOKS -->
-        <div class="skbb-table-section">
-            <h3 class="skbb-section-title">Latest Books</h3>
-
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sl. No.</th>
-                            <th>Book Title</th>
-                            <th>Author</th>
-                            <th>Language</th>
-                            <th>Year</th>
-                            <th>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Modern Odisha Literature</td>
-                            <td>—</td>
-                            <td>Odia</td>
-                            <td>2024</td>
-                            <td>👁</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<section class="partner-marquee">
-    <div class="marquee-track">
-
-        <!-- CARD -->
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/odisha-govt.png" alt="Govt of Odisha">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/library.png" alt="State Library">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/abstract-logo.png" alt="Partner">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-        <!-- DUPLICATE FOR SEAMLESS LOOP -->
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/odisha-govt.png" alt="Govt of Odisha">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/library.png" alt="State Library">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/abstract-logo.png" alt="Partner">
-        </div>
-
-        <div class="partner-card">
-            <img src="images/ocac.png" alt="OCAC">
-        </div>
-
-    </div>
-</section>
-
-
-
-<footer class="site-footer">
-
-    <!-- =========================
-         FOOTER MAIN CONTENT
-    ========================= -->
-    <div class="footer-main">
-
-        <!-- COLUMN 1 : LOGOS -->
-        <div class="footer-col footer-logos">
-            <img src="public/images/govt-odisha.png" alt="Government of Odisha">
-            <img src="public/images/library-logo.png" alt="Odisha State Library">
-        </div>
-
-        <!-- COLUMN 2 : MAIN NAVIGATION -->
-        <div class="footer-col main-menu">
-            <h4>Main Menu</h4>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Library Service</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Catalogues</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Notification</a></li>
-                <li><a href="#">RTI</a></li>
-                <li><a href="#">SKBB</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        
-
-        <!-- COLUMN 3 : RESOURCES -->
-        <div class="footer-col">
-            <h4>Resources</h4>
-            <ul>
-                <li><a href="#">Recruitment / Rules / Vacancy</a></li>
-                <li><a href="#">Orders / Circulars</a></li>
-                <li><a href="#">Annual Report</a></li>
-                <li><a href="#">Digitized Books</a></li>
-                <li><a href="#">Rare Books</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 4 : FEEDBACK -->
-        <div class="footer-col footer-feedback">
-            <h4>Feedback</h4>
-
-            <form class="footer-feedback-form">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea rows="3" placeholder="Your Feedback"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-    </div>
-
-    <!-- =========================
+        <!-- =========================
          DIVIDER
     ========================= -->
-    <!-- <div class="footer-divider"></div> -->
+        <!-- <div class="footer-divider"></div> -->
 
-    <!-- =========================
-         EXISTING TOP LINKS (UNCHANGED)
-    ========================= -->
-    <div class="footer-top">
-        <ul class="footer-links">
-            <li><a href="#">Website Policy</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-        </ul>
-    </div>
-
-    <!-- =========================
-         DIVIDER
-    ========================= -->
-    <!-- <div class="footer-divider"></div> -->
-
-    <!-- =========================
-         EXISTING LICENSE TEXT (UNCHANGED)
-    ========================= -->
-    <div class="footer-middle">
-        <p>
-            The content of this website is licensed under
-            <a href="#" target="_blank">
-                Creative Commons Attribution 4.0 International License
-            </a>.
-        </p>
-    </div>
-
-    <!-- =========================
-         DIVIDER
-    ========================= -->
-    <!-- <div class="footer-divider"></div> -->
-
-    <!-- =========================
+        <!-- =========================
          EXISTING VISITOR COUNT (UNCHANGED)
     ========================= -->
-    <div class="footer-bottom">
-        <span class="visitor-count">
-            Total Visitors: <strong id="visitorCount">253</strong>
-        </span>
+        <div class="footer-bottom">
+            <span class="visitor-count">
+                Total Visitors: <strong id="visitorCount">253</strong>
+            </span>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
     </div>
-
-</footer>
-
-<script src="js/main.js"></script>
-</div>
 </body>
+<script>
+    let currentLang = 'en';
+    const rowsPerPage = 5;
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        document.querySelectorAll('tbody[data-table]').forEach(tb => {
+            paginate(tb, 1);
+        });
+    }
+
+    function paginate(tbody, page) {
+        const rows = Array.from(tbody.querySelectorAll('tr'))
+            .filter(tr => tr.dataset.lang === currentLang);
+
+        tbody.querySelectorAll('tr').forEach(tr => tr.style.display = 'none');
+
+        const start = (page - 1) * rowsPerPage;
+        rows.slice(start, start + rowsPerPage).forEach(tr => tr.style.display = '');
+
+        renderPager(tbody, rows.length, page);
+    }
+
+    function renderPager(tbody, total, page) {
+        let pager = tbody.parentElement.nextElementSibling;
+        if (!pager || !pager.classList.contains('pager')) {
+            pager = document.createElement('div');
+            pager.className = 'pager';
+            pager.style.textAlign = 'center';
+            pager.style.marginTop = '10px';
+            tbody.parentElement.after(pager);
+        }
+        pager.innerHTML = '';
+
+        const pages = Math.ceil(total / rowsPerPage);
+        for (let i = 1; i <= pages; i++) {
+            const btn = document.createElement('button');
+            btn.textContent = i;
+            btn.onclick = () => paginate(tbody, i);
+            btn.style.margin = '0 4px';
+            pager.appendChild(btn);
+        }
+    }
+
+    document.querySelectorAll('tbody[data-table]').forEach(tb => paginate(tb, 1));
+</script>
+
 </html>
