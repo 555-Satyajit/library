@@ -5991,3 +5991,56 @@ tbody tr:last-child td {
         font-size: 13px;
     }
 }
+/* Dropdown inline with toggle buttons */
+.magazine-toggle .dropdown {
+  display: inline-block;
+}
+
+.magazine-toggle .dropdown-toggle::after {
+  margin-left: 0.5em;
+}
+
+/* Ensure full width for tables */
+.magazine-lang-table {
+  width: 100% !important;
+}
+
+/* Table Links */
+.magazine-table a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.magazine-table a:hover {
+  color: #0056b3;
+}
+
+
+
+/* Dropdown inline with toggle buttons */
+.magazine-toggle .dropdown {
+  display: inline-block;
+}
+
+.magazine-toggle .dropdown-toggle::after {
+  margin-left: 0.5em;
+}
+
+/* Ensure full width for tables */
+.magazine-lang-table {
+  width: 100% !important;
+}
+
+/* Table Links */
+.magazine-table a {
+  color: var(--mag-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.magazine-table a:hover {
+  color: #06203d;
+
+}

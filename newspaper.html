@@ -106,7 +106,7 @@
 
         <!-- publications -->
     
-        <li><a href="publication.html">PUBLICATIONS</a></li>
+        
         
         <!-- -->
         <!-- -->
@@ -180,66 +180,148 @@
 
 
 <section class="magazine-section">
-    <div class="magazine-container">
-
-        <!-- HEADER -->
-        <div class="magazine-header">
-            <span class="magazine-tag">Books</span>
-            <h2 class="magazine-title">Newspapers</h2>
-        </div>
-
-        <!-- LANGUAGE TOGGLE -->
-        <div class="magazine-toggle">
-            <button class="magazine-toggle-btn active" data-lang="english">English</button>
-            <button class="magazine-toggle-btn" data-lang="odia">Odia</button>
-        </div>
-
-        <!-- TABLE WRAPPER -->
-        <div class="magazine-table-wrapper">
-
-            <!-- ================= ENGLISH NEWSPAPERS ================= -->
-            <table class="magazine-table magazine-lang-table active" id="english">
-                <thead>
-                    <tr>
-                        <th>Sl. No.</th>
-                        <th>Name of the English Newspapers</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Economic Times</td></tr>
-                    <tr><td>2</td><td>New Indian Express</td></tr>
-                    <tr><td>3</td><td>Times of India</td></tr>
-                    <tr><td>4</td><td>The Hindu</td></tr>
-                    <tr><td>5</td><td>Statesman</td></tr>
-                    <tr><td>6</td><td>Telegraph</td></tr>
-                    <tr><td>7</td><td>Business Standard</td></tr>
-                </tbody>
-            </table>
-
-            <!-- ================= ODIA NEWSPAPERS ================= -->
-            <!-- Headers in Odia | Content in English -->
-            <table class="magazine-table magazine-lang-table" id="odia">
-                <thead>
-                    <tr>
-                        <th>କ୍ରମିକ ସଂଖ୍ୟା</th>
-                        <th>ଓଡ଼ିଆ ସମ୍ବାଦପତ୍ରର ନାମ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Dharitri</td></tr>
-                    <tr><td>2</td><td>Sambad</td></tr>
-                    <tr><td>3</td><td>Samaj</td></tr>
-                    <tr><td>4</td><td>Pragativadi</td></tr>
-                    <tr><td>5</td><td>Odisha Bhaskar</td></tr>
-                    <tr><td>6</td><td>Samaya</td></tr>
-                    <tr><td>7</td><td>Prameya</td></tr>
-                    <tr><td>8</td><td>Prajatantra</td></tr>
-                </tbody>
-            </table>
-
-        </div>
+  <div class="magazine-container">
+    <!-- HEADER -->
+    <div class="magazine-header">
+      <span class="magazine-tag">Books</span>
+      <h2 class="magazine-title">Newspapers</h2>
     </div>
+
+    <!-- LANGUAGE TOGGLE -->
+    <div class="magazine-toggle">
+      <button class="magazine-toggle-btn active" data-lang="english">English</button>
+      <button class="magazine-toggle-btn" data-lang="odia">Odia</button>
+      
+      <!-- E-Newspapers as Bootstrap Dropdown -->
+      <div class="dropdown d-inline-block">
+        <button class="magazine-toggle-btn dropdown-toggle" type="button" id="enewspaperDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          e-Newspapers
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="enewspaperDropdown">
+          <li><a class="dropdown-item" href="#" data-category="national">National</a></li>
+          <li><a class="dropdown-item" href="#" data-category="regional">Regional</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TABLE WRAPPER -->
+    <div class="magazine-table-wrapper">
+      
+      <!-- ================= ENGLISH NEWSPAPERS ================= -->
+      <table class="magazine-table magazine-lang-table active" id="english">
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Name of the English Newspapers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Economic Times</td></tr>
+          <tr><td>2</td><td>New Indian Express</td></tr>
+          <tr><td>3</td><td>Times of India</td></tr>
+          <tr><td>4</td><td>The Hindu</td></tr>
+          <tr><td>5</td><td>Statesman</td></tr>
+          <tr><td>6</td><td>Telegraph</td></tr>
+          <tr><td>7</td><td>Business Standard</td></tr>
+        </tbody>
+      </table>
+
+      <!-- ================= ODIA NEWSPAPERS ================= -->
+      <table class="magazine-table magazine-lang-table" id="odia">
+        <thead>
+          <tr>
+            <th>କ୍ରମିକ ସଂଖ୍ୟା</th>
+            <th>ଓଡ଼ିଆ ସମ୍ବାଦପତ୍ରର ନାମ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Dharitri</td></tr>
+          <tr><td>2</td><td>Sambad</td></tr>
+          <tr><td>3</td><td>Samaj</td></tr>
+          <tr><td>4</td><td>Pragativadi</td></tr>
+          <tr><td>5</td><td>Odisha Bhaskar</td></tr>
+          <tr><td>6</td><td>Samaya</td></tr>
+          <tr><td>7</td><td>Prameya</td></tr>
+          <tr><td>8</td><td>Prajatantra</td></tr>
+        </tbody>
+      </table>
+
+      <!-- ================= NATIONAL E-NEWSPAPERS TABLE ================= -->
+      <table class="magazine-table magazine-lang-table" id="national" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Name of the National e-Newspaper</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>The Economic Times</td>
+            <td><a href="https://economictimes.indiatimes.com/prime/news" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>The Financial Express</td>
+            <td><a href="https://www.financialexpress.com/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The Hindu</td>
+            <td><a href="https://www.thehindu.com/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The Hindustantimes</td>
+            <td><a href="https://www.hindustantimes.com/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>The Times of India</td>
+            <td><a href="https://timesofindia.indiatimes.com/" target="_blank">Read</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ================= REGIONAL E-NEWSPAPERS TABLE ================= -->
+      <table class="magazine-table magazine-lang-table" id="regional" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Name of the Regional e-Newspaper</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>The Dharitri</td>
+            <td><a href="https://dharitri.com/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>The Pragativadi</td>
+            <td><a href="https://pragativadi.com/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The Samaj</td>
+            <td><a href="https://www.thesamaja.in/" target="_blank">Read</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The Sambad</td>
+            <td><a href="https://sambadenglish.com/" target="_blank">Read</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
 </section>
+
+
 
 
 <section class="partner-marquee">

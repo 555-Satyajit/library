@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initMembershipAccordion();
     initPublicationFilter();
     initSimpleAccordionDisplay();
+    initMagazineToggle();
+    initEnewspaperDropdown();
 });
 
 /* ===============================
@@ -217,6 +219,63 @@ function initMagazineToggle() {
     });
 }
 
+function initMagazineToggle() {
+
+    const buttons = document.querySelectorAll(".magazine-toggle-btn:not(.dropdown-toggle)");
+    const tables = document.querySelectorAll(".magazine-lang-table");
+
+    if (!buttons.length || !tables.length) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            // Remove active from all regular buttons
+            buttons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            // Remove active from dropdown button
+            const dropdownBtn = document.getElementById("enewspaperDropdown");
+            if (dropdownBtn) dropdownBtn.classList.remove("active");
+
+            tables.forEach(t => t.classList.remove("active"));
+
+            const table = document.getElementById(btn.dataset.lang);
+            if (table) table.classList.add("active");
+        });
+    });
+}
+
+function initEnewspaperDropdown() {
+    const dropdownItems = document.querySelectorAll('#enewspaperDropdown + .dropdown-menu .dropdown-item');
+    const dropdownBtn = document.getElementById('enewspaperDropdown');
+    const regularButtons = document.querySelectorAll(".magazine-toggle-btn:not(.dropdown-toggle)");
+    const tables = document.querySelectorAll(".magazine-lang-table");
+
+    if (!dropdownItems.length) return;
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const selectedCategory = this.dataset.category;
+            
+            // Remove active from all regular buttons
+            regularButtons.forEach(b => b.classList.remove("active"));
+            
+            // Add active to dropdown button
+            if (dropdownBtn) dropdownBtn.classList.add("active");
+            
+            // Hide all tables
+            tables.forEach(t => t.classList.remove("active"));
+            
+            // Show selected table
+            const selectedTable = document.getElementById(selectedCategory);
+            if (selectedTable) {
+                selectedTable.classList.add("active");
+            }
+        });
+    });
+}
 
 /* ===============================
    PERSONNEL PAGINATION
