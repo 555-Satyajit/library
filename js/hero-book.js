@@ -1,7 +1,7 @@
  // Hero text content for each page
         const heroContent = [
             {
-                title: "Welcome to Harekrushna Mahatab Library",
+                title: "Welcome to Harekrushna Mahtab Library",
                 description: "Discover thousands of books, digital resources, and knowledge that inspire minds and transform lives. Your journey to learning starts here.",
                 cta: "Explore Collection"
             },
