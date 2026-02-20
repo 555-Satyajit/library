@@ -31,7 +31,7 @@
             <!-- SEARCH WRAPPER -->
             <div class="search-wrapper">
                 <input type="text" placeholder="Search..." />
-                <button class="search-close">&times;</button>
+                <button class="search-close">âœ•</button>
             </div>
 
             <a href="#" class="search-toggle">
@@ -40,7 +40,7 @@
             <a href="#"><img src="public\images\ico-skip.png" alt="ico-skip"></a>
             <a href="#"><img src="public\images\ico-accessibility.png" alt="ico-accessibility"></a>
             <a href="#"><img src="public\images\ico-sitemap.png" alt="ico-sitemap"></a>
-            <a href="#">ଓଡ଼ିଆ</a>
+            <a href="#">à¬“à¬¡à¬¼à¬¿à¬†</a>
         </div>
     </div>
 
@@ -58,10 +58,10 @@
 
                         <div class="govt-text">
                             <div class="govt-title">
-                                ହରେକୃଷ୍ଣ ମହତାବ ରାଜ୍ୟ ଗ୍ରନ୍ଥାଗାର
+                                à¬¹à¬°à­‡à¬•à­ƒà¬·à­à¬£ à¬®à¬¹à¬¤à¬¾à¬¬ à¬°à¬¾à¬œà­à­Ÿ à¬—à­à¬°à¬¨à­à¬¥à¬¾à¬—à¬¾à¬°
                             </div>
                             <div class="govt-subtitle">
-                                ଓଡ଼ିଆ ଭାଷା, ସାହିତ୍ୟ ଓ ସଂସ୍କୃତି ବିଭାଗ
+                                à¬“à¬¡à¬¼à¬¿à¬† à¬­à¬¾à¬·à¬¾, à¬¸à¬¾à¬¹à¬¿à¬¤à­à­Ÿ à¬“ à¬¸à¬‚à¬¸à­à¬•à­ƒà¬¤à¬¿ à¬¬à¬¿à¬­à¬¾à¬—
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
 
             <!-- NAVBAR -->
             <nav class="navbar">
-                <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+                <button class="hamburger" id="hamburgerBtn">â˜°</button>
 
                 <ul id="navMenu">
                     <li><a href="index.html"><img src="public/images/home.png" alt="home"></a></li>
@@ -167,7 +167,7 @@
 
                 <!-- close button INSIDE mobile menu -->
                 <li class="nav-close-item">
-                    <button id="navCloseBtn" class="nav-close-btn">&times;</button>
+                    <button id="navCloseBtn" class="nav-close-btn">âœ•</button>
                 </li>
                 </ul>
             </nav>
@@ -231,8 +231,8 @@
 
                 <!-- Controls -->
                 <div class="book-controls">
-                    <button class="control-btn" id="prevBtn">&#8249;</button>
-                    <button class="control-btn" id="nextBtn">&#8250;</button>
+                    <button class="control-btn" id="prevBtn">â€¹</button>
+                    <button class="control-btn" id="nextBtn">â€º</button>
                 </div>
 
             </div>
@@ -262,7 +262,7 @@
 
                 <p class="about-text">
                     By combining traditional archival values with contemporary technology,
-                    we ensure that Odisha’s intellectual and cultural heritage remains
+                    we ensure that Odishaâ€™s intellectual and cultural heritage remains
                     available for generations to come.
                 </p>
 
@@ -301,12 +301,12 @@
                     <ul class="timing-list">
                         <li>
                             <span>General Shift </span>
-                            <strong>10:00 AM &ndash; 5:30 PM</strong>
+                            <strong>10:00 AM â€“ 5:30 PM</strong>
                         </li>
 
                         <li>
                             <span>Children Section</span>
-                            <strong>10:00 AM &ndash; 5:30 PM</strong>
+                            <strong>10:00 AM â€“ 5:30 PM</strong>
                         </li>
 
                         <li class="highlight">
@@ -355,13 +355,13 @@
         <!-- HEADER -->
         <div class="books-header">
             <div>
-                <span class="books-subtitle">People’s Choice</span>
+                <span class="books-subtitle">Peopleâ€™s Choice</span>
                 <h2 class="books-title">New Arrival Books</h2>
             </div>
 
             <div class="books-nav">
-                <button class="nav-btn prev">&#8249;</button>
-                <button class="nav-btn next">&#8250;</button>
+                <button class="nav-btn prev">â€¹</button>
+                <button class="nav-btn next">â€º</button>
             </div>
         </div>
 
@@ -475,7 +475,7 @@
                     journey of learning, exploration, and community.
                 </p>
 
-                <a href="#" class="link">View Details &rarr;</a>
+                <a href="#" class="link">View Details â†’</a>
             </div>
 
             <!-- CARD -->
@@ -487,7 +487,7 @@
                     Access state-level library resources and extended academic services.
                 </p>
 
-                <a href="#" class="link">View Details &rarr;</a>
+                <a href="#" class="link">View Details â†’</a>
             </div>
 
             <!-- CARD -->
@@ -499,7 +499,7 @@
                     Ideal for regular visitors and everyday readers.
                 </p>
 
-                <a href="#" class="link">View Details &rarr;</a>
+                <a href="#" class="link">View Details â†’</a>
             </div>
 
             <!-- CARD -->
@@ -512,7 +512,7 @@
                     learning, and early exposure to library resources in a safe environment.
                 </p>
 
-                <a href="#" class="link">View Details &rarr;</a>
+                <a href="#" class="link">View Details â†’</a>
             </div>
 
 
@@ -544,12 +544,12 @@
         <div class="news-header">
             <div>
                 <span class="news-eyebrow">Latest News & Events</span>
-                <h2 class="news-title">What’s Hot In The News</h2>
+                <h2 class="news-title">Whatâ€™s Hot In The News</h2>
             </div>
 
             <div class="news-nav">
-                <button class="news-btn prev">&#8249;</button>
-                <button class="news-btn next">&#8250;</button>
+                <button class="news-btn prev">â€¹</button>
+                <button class="news-btn next">â€º</button>
             </div>
         </div>
 
@@ -566,7 +566,7 @@
                     <h3 class="news-card-title">Supporting Local Authors and Libraries</h3>
                     <p class="news-desc">
                         From the rugged coastline to the rolling hills, Odisha has inspired
-                        generations of writers to craft stories that reflect the beauty and diversity&hellip;
+                        generations of writers to craft stories that reflect the beauty and diversityâ€¦
                     </p>
                 </article>
 
@@ -576,17 +576,17 @@
                     <h3 class="news-card-title">Digitisation of Rare Manuscripts</h3>
                     <p class="news-desc">
                         The library has begun digitising rare manuscripts to preserve and
-                        provide wider access to valuable archival materials&hellip;
+                        provide wider access to valuable archival materialsâ€¦
                     </p>
                 </article>
 
                 <article class="news-card">
                     <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090" alt="">
                     <span class="news-date">08/08/2025</span>
-                    <h3 class="news-card-title">Exploring Odisha’s Literary Landscape</h3>
+                    <h3 class="news-card-title">Exploring Odishaâ€™s Literary Landscape</h3>
                     <p class="news-desc">
-                        Odisha’s literary heritage reflects its history, culture, and social
-                        evolution through poetry, prose, and research&hellip;
+                        Odishaâ€™s literary heritage reflects its history, culture, and social
+                        evolution through poetry, prose, and researchâ€¦
                     </p>
                 </article>
                 <article class="news-card">
@@ -595,7 +595,7 @@
                     <h3 class="news-card-title">Supporting Local Authors and Libraries</h3>
                     <p class="news-desc">
                         From the rugged coastline to the rolling hills, Odisha has inspired
-                        generations of writers to craft stories that reflect the beauty and diversity&hellip;
+                        generations of writers to craft stories that reflect the beauty and diversityâ€¦
                     </p>
                 </article>
 
@@ -605,17 +605,17 @@
                     <h3 class="news-card-title">Digitisation of Rare Manuscripts</h3>
                     <p class="news-desc">
                         The library has begun digitising rare manuscripts to preserve and
-                        provide wider access to valuable archival materials&hellip;
+                        provide wider access to valuable archival materialsâ€¦
                     </p>
                 </article>
 
                 <article class="news-card">
                     <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090" alt="">
                     <span class="news-date">08/08/2025</span>
-                    <h3 class="news-card-title">Exploring Odisha’s Literary Landscape</h3>
+                    <h3 class="news-card-title">Exploring Odishaâ€™s Literary Landscape</h3>
                     <p class="news-desc">
-                        Odisha’s literary heritage reflects its history, culture, and social
-                        evolution through poetry, prose, and research&hellip;
+                        Odishaâ€™s literary heritage reflects its history, culture, and social
+                        evolution through poetry, prose, and researchâ€¦
                     </p>
                 </article>
 
@@ -687,7 +687,7 @@
         </div>
 
         <div class="gallery-footer">
-            <a href="#">View Full Gallery &rarr;</a>
+            <a href="#">View Full Gallery â†’</a>
         </div>
 
     </section>
@@ -945,8 +945,6 @@
 </body>
 
 </html>
-
-
 
 
 
