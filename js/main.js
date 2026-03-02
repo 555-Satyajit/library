@@ -2,6 +2,7 @@
    GLOBAL ENTRY POINT
 ================================ */
 document.addEventListener("DOMContentLoaded", () => {
+    initGoogleTranslateGlobal();
     initHeroFlipbook();
     initCards();
     initLibsxAccordions();
@@ -19,6 +20,114 @@ document.addEventListener("DOMContentLoaded", () => {
     initMagazineToggle();
     initEnewspaperDropdown();
 });
+
+/* ===============================
+   GOOGLE TRANSLATE (GLOBAL)
+================================ */
+function initGoogleTranslateGlobal() {
+    const odiaLinkById = document.getElementById("odiaTranslateBtn");
+    let odiaLink = odiaLinkById;
+
+    if (!odiaLink) {
+        const odiaLabel = "\u0b13\u0b21\u0b3c\u0b3f\u0b06"; // ?????
+        odiaLink = Array.from(document.querySelectorAll("a")).find(a =>
+            a.textContent && a.textContent.trim() === odiaLabel
+        );
+    }
+    if (!odiaLink) return;
+
+    // Keep fixed Odia identity text from being machine-translated.
+    document.querySelectorAll(".govt-title, .govt-subtitle").forEach(el => {
+        el.classList.add("notranslate");
+        el.setAttribute("translate", "no");
+    });
+
+    // Prevent footer logo sizing from breaking when alt text gets translated.
+    document.querySelectorAll(".footer-logos img").forEach(el => {
+        el.classList.add("notranslate");
+        el.setAttribute("translate", "no");
+    });
+
+    let englishLink = document.getElementById("englishTranslateBtn");
+    if (!englishLink) {
+        englishLink = document.createElement("a");
+        englishLink.href = "#";
+        englishLink.id = "englishTranslateBtn";
+        englishLink.textContent = "English";
+        odiaLink.parentNode.insertBefore(englishLink, odiaLink);
+    }
+
+    odiaLink.id = "odiaTranslateBtn";
+
+    let translateContainer = document.getElementById("google_translate_element");
+    if (!translateContainer) {
+        translateContainer = document.createElement("div");
+        translateContainer.id = "google_translate_element";
+        translateContainer.style.display = "none";
+        document.body.appendChild(translateContainer);
+    }
+
+    let pendingLanguage = null;
+
+    function applyLanguage(lang) {
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event("change"));
+            return;
+        }
+        pendingLanguage = lang;
+    }
+
+    function applyPendingLanguage() {
+        if (!pendingLanguage) return;
+        const select = document.querySelector(".goog-te-combo");
+        if (!select) return;
+        select.value = pendingLanguage;
+        select.dispatchEvent(new Event("change"));
+        pendingLanguage = null;
+    }
+
+    englishLink.addEventListener("click", e => {
+        e.preventDefault();
+        applyLanguage("en");
+    });
+
+    odiaLink.addEventListener("click", e => {
+        e.preventDefault();
+        applyLanguage("or");
+    });
+
+    const existingScript = document.querySelector(
+        'script[src*="translate.google.com/translate_a/element.js"]'
+    );
+
+    window.googleTranslateElementInit = function () {
+        if (
+            window.google &&
+            window.google.translate &&
+            window.google.translate.TranslateElement
+        ) {
+            new window.google.translate.TranslateElement(
+                {
+                    pageLanguage: "en",
+                    includedLanguages: "or,en",
+                    autoDisplay: false
+                },
+                "google_translate_element"
+            );
+            setTimeout(applyPendingLanguage, 100);
+        }
+    };
+
+    if (!existingScript) {
+        const script = document.createElement("script");
+        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(script);
+    } else {
+        setTimeout(applyPendingLanguage, 100);
+    }
+}
 
 /* ===============================
    HERO FLIPBOOK (HTML-driven)

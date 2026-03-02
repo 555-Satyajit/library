@@ -55,6 +55,18 @@ body {
     
 }
 
+/* Google Translate layout overrides */
+body {
+    top: 0 !important;
+}
+
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
 .main-header {
     margin-bottom: 0;
 }
@@ -219,7 +231,7 @@ body {
 
 /* Main heading */
 .govt-title {
-    font-family: "Lato", sans-serif;
+    font-family: "Nirmala UI", "Noto Sans Oriya", "Lato", sans-serif;
     font-size: 26px;
     font-weight: 700;
     color: #0b2c8a;
@@ -229,7 +241,7 @@ body {
 /* Subtitle */
 .govt-subtitle {
     margin-top: 4px;
-    font-family: "Lato", sans-serif;
+    font-family: "Nirmala UI", "Noto Sans Oriya", "Lato", sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #666666;
@@ -1032,16 +1044,17 @@ body {
 ========================= */
 
 .footer-logos img {
-   
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
     margin-bottom: 10px;
     display: block;
 }
 
-.footer-logos img[alt="Government of Odisha"] {
-  
-width: 60%;
-   
-}       
+.footer-logos img:first-child {
+    max-width: 160px;
+}
 
 /* =========================
    MAIN MENU — TRUE 5 / 4 TOP SPLIT
